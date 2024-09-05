@@ -1,0 +1,92 @@
+@import "variables.scss";
+
+.main-header {
+  background-color: #1c3035;
+  position: fixed;
+  z-index: 1000;
+  width: 1920px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+
+  .header-conteiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+
+    .logo {
+      font-weight: 500;
+      font-style: normal;
+      color: $ligthgreen;
+      margin-left: 2%;
+      font-size: 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .logo-next {
+        margin-right: 15px;
+      }
+      a {
+        margin-left: 10px;
+        margin-right: 10px;
+
+        i {
+          color: $ligthgreen;
+        }
+
+        &:hover,
+        &:focus {
+          color: black;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .ul-header {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 850px;
+      background-color: $ligthgreen;
+      border-radius: 20px;
+    }
+
+    li {
+      margin: 15px;
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 15px;
+      margin-right: 35px;
+
+      a {
+        color: $darkgreen;
+        font-weight: 400;
+        font-size: 20px;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+          color: black;
+          text-decoration: none;
+        }
+      }
+    }
+    .btn-discuss {
+      border: none;
+      background-color: $ligthgreen;
+      color: $darkgreen;
+      font-size: 22px;
+      border-radius: 20px;
+      margin-right: 25px;
+      width: 250px;
+      font-weight: 600;
+      height: 50px;
+      padding: 8px;
+      margin-top: 8px;
+    }
+  }
+}

@@ -1,0 +1,114 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+
+
+.section-services {
+  display: flex;
+  flex-direction: column;
+  background-color: #101616;
+
+  .srvice-top {
+    font-size: $sectionFont-Sise;
+    margin-top: 70px;
+    margin-left: $sectionMargin-left;
+    font-weight: $sectionFont-weight;
+    color: $ligthgreen;
+    margin-bottom: 100px;
+  }
+
+  .service-buttom {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 0 30px;
+
+    .sevrice-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 600px;
+      height: 450px;
+      border-radius: 20px;
+      border: 1px solid #242b2b;
+
+      &:hover{
+        border: 1px solid $ligthgreen; 
+      }
+
+      img {
+        width: 250px;
+        height: 250px;
+      }
+
+      p {
+        font-size: 35px;
+        color: $ligthgreen;
+        margin: 10px;
+      }
+    }
+    p:nth-child(3){
+        font-size: 23px;
+        color:#697977;
+    }
+  }
+
+  .service-buttom2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 50px;
+    margin-left: 40px;
+
+
+    .service-buttom2-h1{
+        opacity: 0;
+        font-size: 100px;
+        font-weight: 600;
+        line-height: 110px;
+        color: #697977;
+        margin-top: 10%;
+
+        &.fade-in {
+            opacity: 1;
+            @include fade-in-text(4s, $ligthgreen);
+          }
+
+    }
+
+    .service-buttom2-h1-bottom{
+        opacity: 0;
+        font-size: 100px;
+        line-height: 119px;
+        color: #697977;
+        margin-top: 5%;
+
+        &.fade-in {
+            opacity: 1;
+            @include fade-in-text(8s, $ligthgreen);
+          }
+    }
+
+    .button-robot img{
+        background: transparent;
+    }
+
+  }
+  
+  .touch-with-me{
+    margin-top: 15%;
+    width: 650px;
+    height: 80px;
+    border: none;
+    border-radius: 28px;
+    background-color: $ligthgreen;
+    color: #101616;
+    font-size: 45px;
+    font-weight: 600;
+    margin-left: 4%;
+    margin-bottom: 12%;
+  }
+}

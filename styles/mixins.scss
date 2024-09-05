@@ -1,0 +1,13 @@
+@mixin fade-in-text($duration: 1s, $color: #000) {
+    animation: fadeIn $duration ease-in-out;
+    color: $color;
+    
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  }

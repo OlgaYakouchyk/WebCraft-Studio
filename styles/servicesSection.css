@@ -1,0 +1,147 @@
+.section-services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #101616;
+}
+.section-services .srvice-top {
+  font-size: 40px;
+  margin-top: 70px;
+  margin-left: 42px;
+  font-weight: 400;
+  color: #ebffeb;
+  margin-bottom: 100px;
+}
+.section-services .service-buttom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+  margin: 0 30px;
+}
+.section-services .service-buttom .sevrice-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 600px;
+  height: 450px;
+  border-radius: 20px;
+  border: 1px solid #242b2b;
+}
+.section-services .service-buttom .sevrice-box:hover {
+  border: 1px solid #ebffeb;
+}
+.section-services .service-buttom .sevrice-box img {
+  width: 250px;
+  height: 250px;
+}
+.section-services .service-buttom .sevrice-box p {
+  font-size: 35px;
+  color: #ebffeb;
+  margin: 10px;
+}
+.section-services .service-buttom p:nth-child(3) {
+  font-size: 23px;
+  color: #697977;
+}
+.section-services .service-buttom2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 50px;
+  margin-left: 40px;
+}
+.section-services .service-buttom2 .service-buttom2-h1 {
+  opacity: 0;
+  font-size: 100px;
+  font-weight: 600;
+  line-height: 110px;
+  color: #697977;
+  margin-top: 10%;
+}
+.section-services .service-buttom2 .service-buttom2-h1.fade-in {
+  opacity: 1;
+  -webkit-animation: fadeIn 4s ease-in-out;
+          animation: fadeIn 4s ease-in-out;
+  color: #ebffeb;
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.section-services .service-buttom2 .service-buttom2-h1-bottom {
+  opacity: 0;
+  font-size: 100px;
+  line-height: 119px;
+  color: #697977;
+  margin-top: 5%;
+}
+.section-services .service-buttom2 .service-buttom2-h1-bottom.fade-in {
+  opacity: 1;
+  -webkit-animation: fadeIn 8s ease-in-out;
+          animation: fadeIn 8s ease-in-out;
+  color: #ebffeb;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.section-services .service-buttom2 .button-robot img {
+  background: transparent;
+}
+.section-services .touch-with-me {
+  margin-top: 15%;
+  width: 650px;
+  height: 80px;
+  border: none;
+  border-radius: 28px;
+  background-color: #ebffeb;
+  color: #101616;
+  font-size: 45px;
+  font-weight: 600;
+  margin-left: 4%;
+  margin-bottom: 12%;
+}

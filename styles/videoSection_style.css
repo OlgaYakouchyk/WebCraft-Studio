@@ -1,0 +1,15 @@
+.video-section2 {
+  max-width: 1920px;
+  overflow: hidden;
+  position: relative;
+}
+.video-section2 .video-class {
+  width: 100%;
+}
+.video-section2 .video-class video {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
