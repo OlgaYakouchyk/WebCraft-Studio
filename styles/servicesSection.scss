@@ -62,6 +62,7 @@
     align-items: flex-start;
     margin-bottom: 50px;
     margin-left: 40px;
+    position: relative;
 
 
     .service-buttom2-h1{
@@ -92,9 +93,43 @@
           }
     }
 
-    .button-robot img{
+    .button-robot {
         background: transparent;
+        border: none;
+
+        img{
+          opacity: 0;
+          background-color: transparent !important;
+          position: absolute;
+          bottom: 2%;
+          left: 60%;
+          width: 600px;
+
+          &.fade-in {
+            opacity: 1;
+            @include fade-in(8s);
+          }
+        }
     }
+
+    .button-robot2 {
+      background: transparent;
+      border: none;
+
+      img{
+        opacity: 0;
+        background-color: transparent !important;
+        position: absolute;
+        bottom: 29%;
+        left: 82%;
+        width: 300px;
+
+        &.fade-in {
+          opacity: 1;
+          @include fade-in(8s);
+        }
+      }
+  }
 
   }
   

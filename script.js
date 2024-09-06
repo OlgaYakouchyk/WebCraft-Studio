@@ -46,6 +46,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const fadeTextServiceH1Bottom = document.querySelectorAll(
     ".service-buttom2-h1-bottom"
   );
+  const fadeRobot = document.querySelectorAll(".button-robot img");
+  const fadeRobot2 = document.querySelectorAll(".button-robot2 img");
 
   const observer = new IntersectionObserver(
     (entries) => {
@@ -78,6 +80,14 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   fadeTextServiceH1Bottom.forEach((element) => {
+    observer.observe(element);
+  });
+
+  fadeRobot.forEach((element) => {
+    observer.observe(element);
+  });
+
+  fadeRobot2.forEach((element) => {
     observer.observe(element);
   });
 });
