@@ -241,7 +241,9 @@
           </div>
         </div>
         <div class="service-buttom2">
-          <div class="service-buttom2-h1">Accelerate the growth of your business every day!</div>
+          <div class="service-buttom2-h1">
+            Accelerate the growth of your business every day!
+          </div>
           <div class="service-buttom2-h1-bottom">
             My strategies and creative solutions are focused on scaling your
             company and increasing profits
@@ -250,15 +252,58 @@
           <button class="touch-with-me">Get in Touch with me</button>
 
           <button class="button-robot">
-            <img src="./img/serviceSection/robot.png" alt="robot">
+            <img src="./img/serviceSection/robot.png" alt="robot" />
           </button>
           <button class="button-robot2">
-            <img src="./img/serviceSection/ready-qestion.png" alt="">
+            <img src="./img/serviceSection/ready-qestion.png" alt="" />
           </button>
+
+          <div class="modal-window-answer">
+            <div class="modal-wrapper">
+              <span class="close-modal" id="closeModal">&times;</span>
+
+              <form id="contact-form">
+                <h2>Write your question, and I will give you a consultation</h2>
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Your name"
+                  required
+                /><br />
+
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="enter your email or phone number"
+                  required
+                /><br />
+
+                <label for="message">Massage</label>
+                <textarea
+                  id="message"
+                  placeholder="enter your question"
+                  required
+                ></textarea
+                ><br />
+
+                <input type="submit" value="Send" />
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <script src="./script.js"></script>
+    
+    <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+  ></script>
+    <script src="./script/script.js"></script>
+    <script src="./script/scriptForm.js"></script>
+    <script src="./script/scriptModal.js"></script>
+    
   </body>
 </html>
