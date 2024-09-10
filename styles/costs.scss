@@ -1,0 +1,46 @@
+@import "variables.scss";
+
+
+.secrion-costs{
+    background-image: url("../img/section3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    // background-color: $ligthgreen;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+
+
+    .costs-top{
+        width: 70%;
+        margin-left: 2%;
+
+        h1{
+            font-size: 102px;
+            line-height: 107px;
+            color: $darkgreen;
+            padding-top: 13%;
+        }
+        h2{
+            color: rgb(5, 64, 5);
+            font-size: 102px;
+            padding-bottom: 10%;
+           }
+    .btn-costs{
+        border: none;
+        width: 700px;
+        background-color: $darkgreen;
+        color: $ligthgreen;
+        height: 77px;
+        border-radius: 28px;
+        font-size: 30px;
+        margin-bottom: 10%;
+    }
+    }
+    // .costs-buttom{
+    //     width: 30%;
+    // }
+
+}

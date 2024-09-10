@@ -1,7 +1,7 @@
 (function () {
   emailjs.init("NKquNOAIFzIyOTajD");
   // your puplic key
-  console.log("EmailJS initialized");
+  // console.log("EmailJS initialized");
 })();
 
 document
@@ -14,12 +14,16 @@ document
     const clientEmail = document.getElementById("email").value;
     const clientMessage = document.getElementById("message").value;
 
+    console.log(clientName);
+    console.log(clientEmail);
+
     // Отправляем данные через EmailJS
     emailjs
       .send("service_lpvg7rp", "template_oddzioj", {
-        name: clientName,
+        from_name: clientName,
         email: clientEmail,
         message: clientMessage,
+        reply_to: clientEmail,
       })
       .then(
         function (response) {

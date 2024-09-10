@@ -527,7 +527,6 @@
   margin-bottom: 12%;
 }
 
-/* Основной стиль для модального окна */
 .modal-window-answer {
   display: none; /* Скрыто по умолчанию */
   position: fixed;
@@ -541,11 +540,11 @@
 }
 .modal-window-answer .modal-wrapper {
   background-color: white;
-  margin: 10% auto;
-  padding: 20px;
+  margin: 20% auto;
+  padding: 27px;
   border-radius: 5px;
   width: 80%;
-  max-width: 600px;
+  max-width: 800px;
   -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   position: relative;
@@ -555,14 +554,16 @@
   position: absolute;
   top: 10px;
   right: 20px;
-  font-size: 24px;
+  font-size: 40px;
   font-weight: bold;
   cursor: pointer;
+  color: gray;
 }
 .modal-window-answer .modal-wrapper input, .modal-window-answer .modal-wrapper textarea {
   width: 100%;
   padding: 10px;
   margin-top: 10px;
+  margin-bottom: 6px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
@@ -576,7 +577,46 @@
   font-size: 16px;
 }
 .modal-window-answer .modal-wrapper input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #2f8132;
+}
+.modal-window-answer .modal-wrapper #contact-form {
+  font-size: 23px;
+}
+.modal-window-answer .modal-wrapper #contact-form h2 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.secrion-costs {
+  background-image: url("../img/section3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.secrion-costs .costs-top {
+  width: 70%;
+  margin-left: 2%;
+}
+.secrion-costs .costs-top h1 {
+  font-size: 102px;
+  line-height: 107px;
+  color: #181d18;
+  padding-top: 10%;
+}
+.secrion-costs .costs-top h2 {
+  color: rgb(5, 64, 5);
+  font-size: 102px;
+  padding-bottom: 10%;
+}
+.secrion-costs .costs-top .btn-costs {
+  border: none;
+  width: 700px;
+  background-color: #181d18;
+  color: #ebffeb;
+  height: 77px;
+  border-radius: 28px;
+  font-size: 30px;
+  margin-bottom: 10%;
 }
 
 * {

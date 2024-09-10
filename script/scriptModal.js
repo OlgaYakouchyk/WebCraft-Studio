@@ -1,4 +1,5 @@
 document.querySelector(".touch-with-me").addEventListener("click", openModal);
+// document.querySelector(".button-robot"), addEventListener("click", openModal);
 
 function openModal() {
   document.querySelector(".modal-window-answer").style.display = "block";

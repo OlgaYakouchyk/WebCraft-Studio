@@ -1,0 +1,31 @@
+.secrion-costs {
+  background-image: url("../img/section3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.secrion-costs .costs-top {
+  width: 70%;
+  margin-left: 2%;
+}
+.secrion-costs .costs-top h1 {
+  font-size: 102px;
+  line-height: 107px;
+  color: #181d18;
+  padding-top: 13%;
+}
+.secrion-costs .costs-top h2 {
+  color: rgb(5, 64, 5);
+  font-size: 102px;
+  padding-bottom: 10%;
+}
+.secrion-costs .costs-top .btn-costs {
+  border: none;
+  width: 700px;
+  background-color: #181d18;
+  color: #ebffeb;
+  height: 77px;
+  border-radius: 28px;
+  font-size: 30px;
+  margin-bottom: 10%;
+}
