@@ -6,7 +6,7 @@
 .section-services {
   display: flex;
   flex-direction: column;
-  background-color: #101616;
+  background-color: $backgraundDark;
 
   .srvice-top {
     font-size: $sectionFont-Sise;

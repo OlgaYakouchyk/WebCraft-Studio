@@ -1,31 +1,219 @@
-.secrion-costs {
-  background-image: url("../img/section3.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.section-costs {
+  background-color: #101616;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  z-index: 1;
 }
-.secrion-costs .costs-top {
+.section-costs .section-cost-top {
+  font-size: 40px;
+  margin-top: 70px;
+  margin-left: 42px;
+  font-weight: 400;
+  color: #ebffeb;
+  margin-bottom: 50px;
+}
+.section-costs .costs-top {
   width: 70%;
-  margin-left: 2%;
+  margin: auto;
+  text-align: center;
 }
-.secrion-costs .costs-top h1 {
+.section-costs .costs-top h1 {
   font-size: 102px;
   line-height: 107px;
-  color: #181d18;
+  color: #ebffeb;
   padding-top: 13%;
 }
-.secrion-costs .costs-top h2 {
-  color: rgb(5, 64, 5);
+.section-costs .costs-top h2 {
+  color: rgb(58, 139, 128);
   font-size: 102px;
   padding-bottom: 10%;
 }
-.secrion-costs .costs-top .btn-costs {
+.section-costs .costs-top .btn-costs {
   border: none;
   width: 700px;
-  background-color: #181d18;
-  color: #ebffeb;
+  background-color: #ebffeb;
+  color: #181d18;
   height: 77px;
   border-radius: 28px;
   font-size: 30px;
   margin-bottom: 10%;
+  cursor: pointer;
+}
+.section-costs .costs-top .btn-costs:hover {
+  background-color: rgb(58, 139, 128);
+}
+.section-costs .floating-label {
+  position: absolute;
+  background-color: #ebffeb;
+  color: #181d18;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  display: inline-block;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-shadow: 0px 2px 11px rgb(58, 139, 128);
+          box-shadow: 0px 2px 11px rgb(58, 139, 128);
+  -webkit-animation: float 3s ease-in-out infinite;
+          animation: float 3s ease-in-out infinite;
+}
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes float {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+.section-costs .label1 {
+  top: 22%;
+  left: 10%;
+}
+.section-costs .label1 i {
+  margin-right: 10px;
+  font-size: 25px;
+  color: #181d18;
+}
+.section-costs .label2 {
+  top: 13%;
+  left: 36%;
+}
+.section-costs .label2 i {
+  margin-right: 10px;
+  font-size: 25px;
+  color: #181d18;
+}
+.section-costs .label3 {
+  top: 48%;
+  left: 4%;
+}
+.section-costs .label3 i {
+  margin-right: 10px;
+  font-size: 25px;
+  color: #181d18;
+}
+.section-costs .label4 {
+  top: 58%;
+  left: 84%;
+}
+.section-costs .label4 i {
+  margin-right: 10px;
+  font-size: 25px;
+  color: #181d18;
+}
+.section-costs .label5 {
+  top: 83%;
+  left: 7%;
+}
+.section-costs .label5 i {
+  margin-right: 10px;
+  font-size: 25px;
+  color: #181d18;
+}
+.section-costs .label6 {
+  top: 20%;
+  left: 62%;
+}
+.section-costs .label6 i {
+  margin-right: 10px;
+  font-size: 25px;
+  color: #181d18;
+}
+.section-costs .label7 {
+  top: 24%;
+  left: 88%;
+}
+.section-costs .label7 i {
+  margin-right: 10px;
+  font-size: 25px;
+  color: #181d18;
+}
+.section-costs .label8 {
+  top: 65%;
+  left: 20%;
+}
+.section-costs .label8 i {
+  margin-right: 10px;
+  font-size: 25px;
+  color: #181d18;
+}
+.section-costs .label9 {
+  top: 79%;
+  left: 76%;
+}
+.section-costs .label9 i {
+  margin-right: 10px;
+  font-size: 25px;
+  color: #181d18;
+}
+.section-costs .more-services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+.section-costs .more-services .btn-more-services {
+  position: relative;
+  border: none;
+  background-color: transparent;
+  color: #ebffeb;
+  font-size: 20px;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.section-costs .more-services .btn-more-services::before, .section-costs .more-services .btn-more-services::after {
+  content: "";
+  display: block;
+  width: 700px;
+  height: 0.5px;
+  background-color: #ebffeb;
+  margin: 0 20px;
+}
+.section-costs .more-services .btn-more-services:hover::before, .section-costs .more-services .btn-more-services:hover::after {
+  background-color: rgb(58, 139, 128);
 }

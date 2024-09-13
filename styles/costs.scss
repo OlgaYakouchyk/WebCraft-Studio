@@ -1,46 +1,193 @@
 @import "variables.scss";
+@import "mixins.scss";
 
+.section-costs {
+  // background-image: url("../img/section3.jpg");
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: center;
 
-.secrion-costs{
-    background-image: url("../img/section3.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  background-color: $backgraundDark;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
 
-    // background-color: $ligthgreen;
-    // display: flex;
-    // justify-content: space-between;
-    // align-items: center;
+  .section-cost-top {
+    font-size: $sectionFont-Sise;
+    margin-top: 70px;
+    margin-left: $sectionMargin-left;
+    font-weight: $sectionFont-weight;
+    color: $ligthgreen;
+    margin-bottom: 50px;
+  }
 
+  .costs-top {
+    width: 70%;
+    margin: auto;
+    text-align: center;
 
-    .costs-top{
-        width: 70%;
-        margin-left: 2%;
+    h1 {
+      font-size: 102px;
+      line-height: 107px;
+      color: $ligthgreen;
+      padding-top: 13%;
+    }
+    h2 {
+      color: $green;
+      font-size: 102px;
+      padding-bottom: 10%;
+    }
+    .btn-costs {
+      border: none;
+      width: 700px;
+      background-color: $ligthgreen;
+      color: $darkgreen;
+      height: 77px;
+      border-radius: 28px;
+      font-size: 30px;
+      margin-bottom: 10%;
+      cursor: pointer;
+      &:hover {
+        background-color: $green;
+      }
+    }
+  }
 
-        h1{
-            font-size: 102px;
-            line-height: 107px;
-            color: $darkgreen;
-            padding-top: 13%;
-        }
-        h2{
-            color: rgb(5, 64, 5);
-            font-size: 102px;
-            padding-bottom: 10%;
-           }
-    .btn-costs{
-        border: none;
+  .floating-label {
+    position: absolute;
+    background-color: $ligthgreen;
+    color: $darkgreen;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    display: inline-block;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 2px 11px $green;
+
+    // Используем миксин для добавления анимации
+
+    @include float-animation(3s, 15px)
+      // Передаем время анимации и расстояние движения
+;
+  }
+  .label1 {
+    top: 22%;
+    left: 10%;
+    i {
+      margin-right: 10px;
+      font-size: 25px;
+      color: $darkgreen;
+    }
+  }
+  .label2 {
+    top: 13%;
+    left: 36%;
+    i {
+      margin-right: 10px;
+      font-size: 25px;
+      color: $darkgreen;
+    }
+  }
+  .label3 {
+    top: 48%;
+    left: 4%;
+    i {
+      margin-right: 10px;
+      font-size: 25px;
+      color: $darkgreen;
+    }
+  }
+  .label4 {
+    top: 58%;
+    left: 84%;
+    i {
+      margin-right: 10px;
+      font-size: 25px;
+      color: $darkgreen;
+    }
+  }
+  .label5 {
+    top: 83%;
+    left: 7%;
+    i {
+      margin-right: 10px;
+      font-size: 25px;
+      color: $darkgreen;
+    }
+  }
+  .label6 {
+    top: 20%;
+    left: 62%;
+    i {
+      margin-right: 10px;
+      font-size: 25px;
+      color: $darkgreen;
+    }
+  }
+  .label7 {
+    top: 24%;
+    left: 88%;
+    i {
+      margin-right: 10px;
+      font-size: 25px;
+      color: $darkgreen;
+    }
+  }
+  .label8 {
+    top: 65%;
+    left: 20%;
+    i {
+      margin-right: 10px;
+      font-size: 25px;
+      color: $darkgreen;
+    }
+  }
+  .label9 {
+    top: 79%;
+    left: 76%;
+    i {
+      margin-right: 10px;
+      font-size: 25px;
+      color: $darkgreen;
+    }
+  }
+
+  .more-services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 3%;
+
+    .btn-more-services {
+      position: relative;
+      border: none;
+      background-color: transparent;
+      color: $ligthgreen;
+      font-size: 20px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &::before,
+      &::after {
+        content: "";
+        display: block;
         width: 700px;
-        background-color: $darkgreen;
-        color: $ligthgreen;
-        height: 77px;
-        border-radius: 28px;
-        font-size: 30px;
-        margin-bottom: 10%;
-    }
-    }
-    // .costs-buttom{
-    //     width: 30%;
-    // }
+        height: 0.5px;
+        background-color: $ligthgreen;
+        margin: 0 20px;
+      }
 
+      &:hover::before,
+      &:hover::after {
+        background-color: $green;
+      }
+    }
+  }
 }

@@ -23,6 +23,22 @@
       opacity: 1;
     }
   }
-    
-  
+}
+
+// Определение миксина для "плавающей" анимации
+
+@mixin float-animation($duration: 2s, $distance: 10px) {
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-#{$distance});
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  animation: float $duration ease-in-out infinite;
 }

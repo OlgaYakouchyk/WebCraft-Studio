@@ -37,8 +37,8 @@
           <ul class="ul-header">
             <li><a href="#" onclick="">Process</a></li>
             <li><a href="#" onclick="">Servises</a></li>
+            <li><a href="#" onclick="">Costs</a></li>
             <li><a href="#" onclick="">Projects</a></li>
-            <li><a href="#" onclick="">Contacts</a></li>
             <li><a href="#" onclick="">Reviews</a></li>
           </ul>
           <button class="btn-discuss">Discuss the project</button>
@@ -166,7 +166,7 @@
           </div>
         </div>
       </div>
-
+      <!-- *** SECTION SERVICES *** -->
       <div class="section-services">
         <div class="srvice-top">// Services</div>
         <div class="service-buttom">
@@ -276,7 +276,16 @@
                 <input
                   type="email"
                   id="email"
-                  placeholder="enter your email or phone number"
+                  placeholder="Enter your email"
+                  required
+                /><br />
+
+                <label for="phone">Phone:</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Enter you phone number"
                   required
                 /><br />
 
@@ -296,15 +305,27 @@
       </div>
 
       <!-- *** SECTION COSTS *** -->
-      <div class="secrion-costs">
+      <div class="section-costs">
+        <div class="section-cost-top">// Costs</div>
         <div class="costs-top">
+          
           <h1>Calculate the cost of working with me by answering</h1>
           <h2>2 questions</h2>
           <button class="btn-costs">CALCULETE COSTS</button>
         </div>
-        <!-- <div class="costs-buttom">
-          <img src="./img/section4.png" alt="" />
-        </div> -->
+        
+         <div class="floating-label label1"><i class="fa-solid fa-code"></i>HTML</div>
+         <div class="floating-label label2"><i class="fa-brands fa-js"></i>JavaScript</div>
+         <div class="floating-label label3"><i class="fa-brands fa-css3"></i>CSS</div>
+         <div class="floating-label label4"><i class="fa-solid fa-database"></i>SQL</div>
+         <div class="floating-label label5"><i class="fa-brands fa-react"></i>React</div>
+         <div class="floating-label label6"><i class="fa-brands fa-sass"></i>SCSS</div>
+         <div class="floating-label label7"><i class="fa-brands fa-dev"></i>Dev</div>
+         <div class="floating-label label8"><i class="fa-brands fa-connectdevelop"></i>SEO</div>
+         <div class="floating-label label9"><i class="fa-brands fa-wordpress"></i>WordPress</div>
+<div class="more-services">
+  <button class="btn-more-services">MORE SERVICES</button> </div>
+        </div>
       </div>
     </div>
 
