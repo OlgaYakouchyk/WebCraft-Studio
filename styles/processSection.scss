@@ -116,6 +116,7 @@
   align-items: center;
   overflow: hidden;
   transition: margin-left 0.5s;
+  padding-right: 2%;
 
   .block {
     display: flex;
@@ -123,8 +124,8 @@
     align-items: center;
     background-color: #101616;
     border-radius: 20px;
-    width: 450px;
-    height: 460px;
+    width: 400px;
+    height: 500px;
     flex-shrink: 0;
     margin: 0 10px;
     text-align: center;

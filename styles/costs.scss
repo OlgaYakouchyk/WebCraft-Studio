@@ -19,7 +19,7 @@
     margin-left: $sectionMargin-left;
     font-weight: $sectionFont-weight;
     color: $ligthgreen;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
   }
 
   .costs-top {
@@ -28,19 +28,19 @@
     text-align: center;
 
     h1 {
-      font-size: 102px;
-      line-height: 107px;
+      font-size: 75px;
+      line-height: 100px;
       color: $ligthgreen;
       padding-top: 13%;
     }
     h2 {
       color: $green;
-      font-size: 102px;
+      font-size: 75px;
       padding-bottom: 10%;
     }
     .btn-costs {
       border: none;
-      width: 700px;
+      width: 500px;
       background-color: $ligthgreen;
       color: $darkgreen;
       height: 77px;
@@ -169,7 +169,6 @@
       background-color: transparent;
       color: $ligthgreen;
       font-size: 20px;
-      font-weight: 600;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -178,7 +177,7 @@
       &::after {
         content: "";
         display: block;
-        width: 700px;
+        width: 600px;
         height: 0.5px;
         background-color: $ligthgreen;
         margin: 0 20px;

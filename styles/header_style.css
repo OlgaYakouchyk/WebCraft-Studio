@@ -2,9 +2,9 @@
   background-color: #1c3035;
   position: fixed;
   z-index: 1000;
-  width: 1920px;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
 }
 .main-header .header-conteiner {
   display: -webkit-box;
@@ -61,7 +61,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 850px;
   background-color: #ebffeb;
   border-radius: 20px;
 }
@@ -82,7 +81,10 @@
   color: black;
   text-decoration: none;
 }
-.main-header .header-conteiner .btn-discuss {
+.main-header .header-conteiner a {
+  margin-right: 1%;
+}
+.main-header .header-conteiner a .btn-discuss {
   border: none;
   background-color: #ebffeb;
   color: #181d18;

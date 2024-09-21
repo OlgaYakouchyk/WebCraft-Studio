@@ -4,8 +4,8 @@
   background-color: #1c3035;
   position: fixed;
   z-index: 1000;
-  width: 1920px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
 
 
   .header-conteiner {
@@ -50,7 +50,6 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 850px;
       background-color: $ligthgreen;
       border-radius: 20px;
     }
@@ -75,18 +74,24 @@
         }
       }
     }
-    .btn-discuss {
-      border: none;
-      background-color: $ligthgreen;
-      color: $darkgreen;
-      font-size: 22px;
-      border-radius: 20px;
-      margin-right: 25px;
-      width: 250px;
-      font-weight: 600;
-      height: 50px;
-      padding: 8px;
-      margin-top: 8px;
+
+    a{
+      margin-right: 1%;
+
+      .btn-discuss {
+        border: none;
+        background-color: $ligthgreen;
+        color: $darkgreen;
+        font-size: 22px;
+        border-radius: 20px;
+        margin-right: 25px;
+        width: 250px;
+        font-weight: 600;
+        height: 50px;
+        padding: 8px;
+        margin-top: 8px;
+      }
     }
+   
   }
 }

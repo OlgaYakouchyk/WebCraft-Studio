@@ -30,7 +30,8 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
-      width: 600px;
+      max-width: 450px;
+      width: 90%;
       height: 450px;
       border-radius: 20px;
       border: 1px solid #242b2b;
@@ -67,12 +68,10 @@
 
     .service-buttom2-h1{
         opacity: 0;
-        font-size: 100px;
-        font-weight: 600;
-        line-height: 110px;
+        font-size: 60px;
         color: #697977;
         margin-top: 10%;
-
+      
         &.fade-in {
             opacity: 1;
             @include fade-in-text(4s, $ligthgreen);
@@ -82,10 +81,10 @@
 
     .service-buttom2-h1-bottom{
         opacity: 0;
-        font-size: 100px;
-        line-height: 119px;
+        font-size: 70px;
+        line-height: 100px;
         color: #697977;
-        margin-top: 5%;
+        margin-top: 6%;
 
         &.fade-in {
             opacity: 1;
@@ -102,8 +101,9 @@
           background-color: transparent !important;
           position: absolute;
           bottom: 2%;
-          left: 64%;
-          width: 525px;
+          left: 66%;
+          max-width: 420px;
+    
 
           &.fade-in {
             opacity: 1;
@@ -121,8 +121,8 @@
         background-color: transparent !important;
         position: absolute;
         bottom: 29%;
-        left: 82%;
-        width: 250px;
+        left: 84%;
+        width: 200px;
 
         &.fade-in {
           opacity: 1;
@@ -135,13 +135,13 @@
   
   .touch-with-me{
     margin-top: 15%;
-    width: 650px;
+    width: 500px;
     height: 80px;
     border: none;
     border-radius: 28px;
     background-color: $ligthgreen;
     color: #101616;
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 600;
     margin-left: 4%;
     margin-bottom: 12%;

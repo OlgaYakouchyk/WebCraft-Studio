@@ -4,12 +4,12 @@
   border: 20px;
   position: fixed;
   top: 50%;
-  left: 38%;
+  left: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: 1000;
-  max-width: 1400px;
+  width: 1300px;
   -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -19,7 +19,7 @@
   margin-left: 2%;
 }
 .modal-more-services .more-services-wrapper {
-  padding: 2%;
+  padding: 0 2% 1%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -37,7 +37,6 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 30px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -53,7 +52,15 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-  width: 45%;
+  width: 50%;
+}
+.modal-more-services .more-services-wrapper .more-top .more-section::after {
+  content: "";
+  display: block;
+  width: 500px;
+  height: 0.5px;
+  background-color: #181d18;
+  margin-bottom: 3%;
 }
 .modal-more-services .more-services-wrapper .more-top .more-section .section-left {
   display: -webkit-box;
@@ -66,15 +73,14 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-  margin-bottom: 20px;
 }
 .modal-more-services .more-services-wrapper .more-top .more-section .section-left h1 {
-  font-size: 40px;
+  font-size: 22px;
   color: #181d18;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
 }
 .modal-more-services .more-services-wrapper .more-top .more-section .section-left p {
-  font-size: 20px;
+  font-size: 15px;
   color: rgb(32, 58, 49);
   max-width: 95%;
   margin-bottom: 15px;
@@ -89,16 +95,16 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 40px;
-  margin-bottom: 60px;
+  gap: 250px;
+  margin-bottom: 20px;
 }
 .modal-more-services .more-services-wrapper .more-top .more-section h3 {
-  font-size: 28px;
+  font-size: 17px;
   color: #181d18;
   text-align: end;
 }
 .modal-more-services .more-services-wrapper .more-top .more-section h2 {
-  font-size: 29px;
+  font-size: 17px;
   color: #181d18;
 }
 .modal-more-services .more-services-wrapper .more-buttom {

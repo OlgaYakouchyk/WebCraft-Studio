@@ -3,9 +3,9 @@
   background-color: #1c3035;
   position: fixed;
   z-index: 1000;
-  width: 1920px;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
 }
 .main-header .header-conteiner {
   display: -webkit-box;
@@ -62,7 +62,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 850px;
   background-color: #ebffeb;
   border-radius: 20px;
 }
@@ -83,7 +82,10 @@
   color: black;
   text-decoration: none;
 }
-.main-header .header-conteiner .btn-discuss {
+.main-header .header-conteiner a {
+  margin-right: 1%;
+}
+.main-header .header-conteiner a .btn-discuss {
   border: none;
   background-color: #ebffeb;
   color: #181d18;
@@ -117,9 +119,9 @@
   background-color: #1c3035;
   position: fixed;
   z-index: 1000;
-  width: 1920px;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
 }
 .main-header .header-conteiner {
   display: -webkit-box;
@@ -176,7 +178,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 850px;
   background-color: #ebffeb;
   border-radius: 20px;
 }
@@ -197,7 +198,10 @@
   color: black;
   text-decoration: none;
 }
-.main-header .header-conteiner .btn-discuss {
+.main-header .header-conteiner a {
+  margin-right: 1%;
+}
+.main-header .header-conteiner a .btn-discuss {
   border: none;
   background-color: #ebffeb;
   color: #181d18;
@@ -386,6 +390,7 @@
   overflow: hidden;
   -webkit-transition: margin-left 0.5s;
   transition: margin-left 0.5s;
+  padding-right: 2%;
 }
 .block-carusel .block {
   display: -webkit-box;
@@ -400,8 +405,8 @@
           align-items: center;
   background-color: #101616;
   border-radius: 20px;
-  width: 450px;
-  height: 460px;
+  width: 400px;
+  height: 500px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   margin: 0 10px;
@@ -484,7 +489,8 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  width: 600px;
+  max-width: 450px;
+  width: 90%;
   height: 450px;
   border-radius: 20px;
   border: 1px solid #242b2b;
@@ -522,9 +528,7 @@
 }
 .section-services .service-buttom2 .service-buttom2-h1 {
   opacity: 0;
-  font-size: 100px;
-  font-weight: 600;
-  line-height: 110px;
+  font-size: 60px;
   color: #697977;
   margin-top: 10%;
 }
@@ -544,10 +548,10 @@
 }
 .section-services .service-buttom2 .service-buttom2-h1-bottom {
   opacity: 0;
-  font-size: 100px;
-  line-height: 119px;
+  font-size: 70px;
+  line-height: 100px;
   color: #697977;
-  margin-top: 5%;
+  margin-top: 6%;
 }
 .section-services .service-buttom2 .service-buttom2-h1-bottom.fade-in {
   opacity: 1;
@@ -572,8 +576,8 @@
   background-color: transparent !important;
   position: absolute;
   bottom: 2%;
-  left: 64%;
-  width: 525px;
+  left: 66%;
+  max-width: 420px;
 }
 .section-services .service-buttom2 .button-robot img.fade-in {
   opacity: 1;
@@ -597,8 +601,8 @@
   background-color: transparent !important;
   position: absolute;
   bottom: 29%;
-  left: 82%;
-  width: 250px;
+  left: 84%;
+  width: 200px;
 }
 .section-services .service-buttom2 .button-robot2 img.fade-in {
   opacity: 1;
@@ -615,13 +619,13 @@
 }
 .section-services .touch-with-me {
   margin-top: 15%;
-  width: 650px;
+  width: 500px;
   height: 80px;
   border: none;
   border-radius: 28px;
   background-color: #ebffeb;
   color: #101616;
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 600;
   margin-left: 4%;
   margin-bottom: 12%;
@@ -705,7 +709,7 @@
   margin-left: 42px;
   font-weight: 400;
   color: #ebffeb;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 .section-costs .costs-top {
   width: 70%;
@@ -713,19 +717,19 @@
   text-align: center;
 }
 .section-costs .costs-top h1 {
-  font-size: 102px;
-  line-height: 107px;
+  font-size: 75px;
+  line-height: 100px;
   color: #ebffeb;
   padding-top: 13%;
 }
 .section-costs .costs-top h2 {
   color: rgb(58, 139, 128);
-  font-size: 102px;
+  font-size: 75px;
   padding-bottom: 10%;
 }
 .section-costs .costs-top .btn-costs {
   border: none;
-  width: 700px;
+  width: 500px;
   background-color: #ebffeb;
   color: #181d18;
   height: 77px;
@@ -884,7 +888,6 @@
   background-color: transparent;
   color: #ebffeb;
   font-size: 20px;
-  font-weight: 600;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -898,7 +901,7 @@
 .section-costs .more-services .btn-more-services::before, .section-costs .more-services .btn-more-services::after {
   content: "";
   display: block;
-  width: 700px;
+  width: 600px;
   height: 0.5px;
   background-color: #ebffeb;
   margin: 0 20px;
@@ -913,12 +916,12 @@
   border: 20px;
   position: fixed;
   top: 50%;
-  left: 38%;
+  left: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: 1000;
-  max-width: 1400px;
+  width: 1300px;
   -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -928,7 +931,7 @@
   margin-left: 2%;
 }
 .modal-more-services .more-services-wrapper {
-  padding: 2%;
+  padding: 0 2% 1%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -946,7 +949,6 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 30px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -962,7 +964,15 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-  width: 45%;
+  width: 50%;
+}
+.modal-more-services .more-services-wrapper .more-top .more-section::after {
+  content: "";
+  display: block;
+  width: 500px;
+  height: 0.5px;
+  background-color: #181d18;
+  margin-bottom: 3%;
 }
 .modal-more-services .more-services-wrapper .more-top .more-section .section-left {
   display: -webkit-box;
@@ -975,15 +985,14 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-  margin-bottom: 20px;
 }
 .modal-more-services .more-services-wrapper .more-top .more-section .section-left h1 {
-  font-size: 40px;
+  font-size: 22px;
   color: #181d18;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
 }
 .modal-more-services .more-services-wrapper .more-top .more-section .section-left p {
-  font-size: 20px;
+  font-size: 15px;
   color: rgb(32, 58, 49);
   max-width: 95%;
   margin-bottom: 15px;
@@ -998,16 +1007,16 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 40px;
-  margin-bottom: 60px;
+  gap: 250px;
+  margin-bottom: 20px;
 }
 .modal-more-services .more-services-wrapper .more-top .more-section h3 {
-  font-size: 28px;
+  font-size: 17px;
   color: #181d18;
   text-align: end;
 }
 .modal-more-services .more-services-wrapper .more-top .more-section h2 {
-  font-size: 29px;
+  font-size: 17px;
   color: #181d18;
 }
 .modal-more-services .more-services-wrapper .more-buttom {

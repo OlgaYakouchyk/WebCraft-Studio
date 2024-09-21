@@ -16,7 +16,7 @@
   margin-left: 42px;
   font-weight: 400;
   color: #ebffeb;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 .section-costs .costs-top {
   width: 70%;
@@ -24,19 +24,19 @@
   text-align: center;
 }
 .section-costs .costs-top h1 {
-  font-size: 102px;
-  line-height: 107px;
+  font-size: 75px;
+  line-height: 100px;
   color: #ebffeb;
   padding-top: 13%;
 }
 .section-costs .costs-top h2 {
   color: rgb(58, 139, 128);
-  font-size: 102px;
+  font-size: 75px;
   padding-bottom: 10%;
 }
 .section-costs .costs-top .btn-costs {
   border: none;
-  width: 700px;
+  width: 500px;
   background-color: #ebffeb;
   color: #181d18;
   height: 77px;
@@ -195,7 +195,6 @@
   background-color: transparent;
   color: #ebffeb;
   font-size: 20px;
-  font-weight: 600;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -209,7 +208,7 @@
 .section-costs .more-services .btn-more-services::before, .section-costs .more-services .btn-more-services::after {
   content: "";
   display: block;
-  width: 700px;
+  width: 600px;
   height: 0.5px;
   background-color: #ebffeb;
   margin: 0 20px;
