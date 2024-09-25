@@ -42,3 +42,25 @@ window.addEventListener("click", function (event) {
     closeModalMore();
   }
 });
+
+//модальное окно calculete the costs
+
+document.querySelector(".btn-costs").addEventListener("click", openModalCosts);
+
+function openModalCosts() {
+  document.querySelector(".modal-calculete-costs").style.display = "block";
+}
+
+function closeModalCosts() {
+  document.querySelector(".modal-calculete-costs").style.display = "none";
+}
+
+document
+  .querySelector(".close-modal-costs")
+  .addEventListener("click", closeModalCosts);
+
+window.addEventListener("click", function (event) {
+  if (event.target === this.document.querySelector(".modal-calculete-costs")) {
+    closeModalCosts();
+  }
+});

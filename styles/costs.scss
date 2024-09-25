@@ -23,21 +23,106 @@
   }
 
   .costs-top {
-    width: 70%;
-    margin: auto;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
 
-    h1 {
-      font-size: 75px;
-      line-height: 100px;
-      color: $ligthgreen;
-      padding-top: 13%;
+    .cost-section-left {
+      width: 38%;
+      margin-left: 2%;
+      text-align: start;
+
+      h1 {
+        font-size: 40px;
+        line-height: 45px;
+        color: $ligthgreen;
+        padding-top: 1%;
+      }
     }
-    h2 {
-      color: $green;
-      font-size: 75px;
-      padding-bottom: 10%;
+
+    .cost-section-rigth {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: start;
+
+      .cost-section2,
+      .cost-section3,
+      .cost-section4 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        color: $ligthgreen;
+        width: 80%;
+        gap: 15px;
+        text-align: start;
+        margin-bottom: 4%;
+
+        &::after {
+          content: "";
+          display: block;
+          width: 550px;
+          height: 0.5px;
+          background-color: rgb(61, 65, 64);
+          margin-top: 15px;
+         
+        }
+
+
+        .blok1 {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          margin-bottom: 1%;
+
+          h2 {
+            font-size: 30px;
+            color: $ligthgreen;
+          }
+
+          p {
+            color: $ligthgreen;
+            font-size: 15px;
+          }
+        }
+        .blok2 {
+          display: block;
+          flex-direction: column;
+          align-items: center;
+          
+
+          p {
+            font-size: 17px;
+            color: rgb(115 120 119);
+            margin-bottom: 2%;
+          }
+        }
+
+        .blok3{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+       
+
+          .btn-discuss{
+            background-color: transparent;
+            color: $ligthgreen;
+            font-size: 25px;
+          }
+
+          .what-include{
+            font-size: 22px;
+            text-decoration: underline;
+            color: rgb(115 120 119);
+          }
+        }
+      }
     }
+
     .btn-costs {
       border: none;
       width: 500px;
