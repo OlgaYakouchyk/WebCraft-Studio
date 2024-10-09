@@ -26,7 +26,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 25px;
+    gap: 15px;
 
     .cost-section-left {
       width: 38%;
@@ -34,9 +34,9 @@
       text-align: start;
 
       h1 {
-        font-size: 40px;
-        line-height: 45px;
-        color: $ligthgreen;
+        font-size: 30px;
+        line-height: 40px;
+        color: rgb(115 120 119);
         padding-top: 1%;
       }
     }
@@ -45,7 +45,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      align-items: start;
+      align-items: center;
 
       .cost-section2,
       .cost-section3,
@@ -67,9 +67,7 @@
           height: 0.5px;
           background-color: rgb(61, 65, 64);
           margin-top: 15px;
-         
         }
-
 
         .blok1 {
           display: flex;
@@ -92,7 +90,6 @@
           display: block;
           flex-direction: column;
           align-items: center;
-          
 
           p {
             font-size: 17px;
@@ -101,24 +98,29 @@
           }
         }
 
-        .blok3{
+        .blok3 {
           display: flex;
           justify-content: space-between;
           align-items: center;
           width: 100%;
-       
 
-          .btn-discuss{
+          .btn-discuss {
             background-color: transparent;
             color: $ligthgreen;
             font-size: 25px;
           }
 
-          .what-include{
-            font-size: 22px;
-            text-decoration: underline;
-            color: rgb(115 120 119);
-          }
+            .btn-include {
+              border: none;
+              background-color: transparent;
+              font-size: 22px;
+              text-decoration: underline;
+              color: rgb(115 120 119);font-size: 22px;
+              text-decoration: underline;
+              color: rgb(115 120 119);
+  
+            }
+          
         }
       }
     }
@@ -159,83 +161,83 @@
 ;
   }
   .label1 {
-    top: 22%;
-    left: 10%;
+    top: 20%;
+    left: 9%;
     i {
       margin-right: 10px;
-      font-size: 25px;
+      font-size: 20px;
       color: $darkgreen;
     }
   }
   .label2 {
     top: 13%;
-    left: 36%;
+    left: 2%;
     i {
       margin-right: 10px;
-      font-size: 25px;
+      font-size: 20px;
       color: $darkgreen;
     }
   }
   .label3 {
-    top: 48%;
-    left: 4%;
+    top: 32%;
+    left: 22%;
     i {
       margin-right: 10px;
-      font-size: 25px;
+      font-size: 20px;
       color: $darkgreen;
     }
   }
   .label4 {
-    top: 58%;
-    left: 84%;
+    top: 87%;
+    left: 29%;
     i {
       margin-right: 10px;
-      font-size: 25px;
+      font-size: 20px;
       color: $darkgreen;
     }
   }
   .label5 {
-    top: 83%;
-    left: 7%;
+    top: 26%;
+    left: 16%;
     i {
       margin-right: 10px;
-      font-size: 25px;
+      font-size: 20px;
       color: $darkgreen;
     }
   }
   .label6 {
-    top: 20%;
-    left: 62%;
+    top: 39%;
+    left: 27%;
     i {
       margin-right: 10px;
-      font-size: 25px;
+      font-size: 20px;
       color: $darkgreen;
     }
   }
   .label7 {
-    top: 24%;
-    left: 88%;
+    top: 80%;
+    left: 21%;
     i {
       margin-right: 10px;
-      font-size: 25px;
+      font-size: 20px;
       color: $darkgreen;
     }
   }
   .label8 {
-    top: 65%;
-    left: 20%;
+    top: 72%;
+    left: 13%;
     i {
       margin-right: 10px;
-      font-size: 25px;
+      font-size: 20px;
       color: $darkgreen;
     }
   }
   .label9 {
-    top: 79%;
-    left: 76%;
+    top: 64%;
+    left: 4%;
     i {
       margin-right: 10px;
-      font-size: 25px;
+      font-size: 20px;
       color: $darkgreen;
     }
   }
@@ -245,7 +247,7 @@
     justify-content: center;
     align-items: center;
     margin: auto;
-    margin-top: 2%;
+    margin-top: 4%;
     margin-bottom: 3%;
 
     .btn-more-services {

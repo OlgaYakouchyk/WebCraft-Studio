@@ -43,24 +43,35 @@ window.addEventListener("click", function (event) {
   }
 });
 
-//модальное окно calculete the costs
+// modal window what include?
 
-document.querySelector(".btn-costs").addEventListener("click", openModalCosts);
+document.addEventListener("DOMContentLoaded", function () {
+  const modalOverlay = document.querySelector(".modal-overlay");
+  const modalWindow = document.querySelector(".modal-what-in-price");
+  const closeModal = document.querySelector(".close-modal-include");
 
-function openModalCosts() {
-  document.querySelector(".modal-calculete-costs").style.display = "block";
-}
+  // открытие модального окна
 
-function closeModalCosts() {
-  document.querySelector(".modal-calculete-costs").style.display = "none";
-}
+  document.querySelectorAll(".btn-include").forEach((button) => {
+    button.addEventListener("click", function () {
+      modalOverlay.style.display = "block";
+      modalWindow.style.display = "block";
+      document.body.style.overflow = "hidden";
+    });
+  });
 
-document
-  .querySelector(".close-modal-costs")
-  .addEventListener("click", closeModalCosts);
+  // закрытие модального окна
+  closeModal.addEventListener("click", () => {
+    modalOverlay.style.display = "none";
+    modalWindow.style.display = "none";
+    document.body.style.overflow = "auto";
+  });
 
-window.addEventListener("click", function (event) {
-  if (event.target === this.document.querySelector(".modal-calculete-costs")) {
-    closeModalCosts();
-  }
+  //  закрытие модального окна при клике ина темный фон
+
+  modalOverlay.addEventListener("click", () => {
+    modalOverlay.style.display = "none";
+    modalWindow.style.display = "none";
+    document.body.style.overflow = "auto";
+  });
 });

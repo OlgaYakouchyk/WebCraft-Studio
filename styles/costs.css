@@ -28,7 +28,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 25px;
+  gap: 15px;
 }
 .section-costs .costs-top .cost-section-left {
   width: 38%;
@@ -36,9 +36,9 @@
   text-align: start;
 }
 .section-costs .costs-top .cost-section-left h1 {
-  font-size: 40px;
-  line-height: 45px;
-  color: #ebffeb;
+  font-size: 30px;
+  line-height: 40px;
+  color: rgb(115, 120, 119);
   padding-top: 1%;
 }
 .section-costs .costs-top .cost-section-rigth {
@@ -52,9 +52,9 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .section-costs .costs-top .cost-section-rigth .cost-section2,
 .section-costs .costs-top .cost-section-rigth .cost-section3,
@@ -155,9 +155,14 @@
   color: #ebffeb;
   font-size: 25px;
 }
-.section-costs .costs-top .cost-section-rigth .cost-section2 .blok3 .what-include,
-.section-costs .costs-top .cost-section-rigth .cost-section3 .blok3 .what-include,
-.section-costs .costs-top .cost-section-rigth .cost-section4 .blok3 .what-include {
+.section-costs .costs-top .cost-section-rigth .cost-section2 .blok3 .btn-include,
+.section-costs .costs-top .cost-section-rigth .cost-section3 .blok3 .btn-include,
+.section-costs .costs-top .cost-section-rigth .cost-section4 .blok3 .btn-include {
+  border: none;
+  background-color: transparent;
+  font-size: 22px;
+  text-decoration: underline;
+  color: rgb(115, 120, 119);
   font-size: 22px;
   text-decoration: underline;
   color: rgb(115, 120, 119);
@@ -223,84 +228,84 @@
   }
 }
 .section-costs .label1 {
-  top: 22%;
-  left: 10%;
+  top: 20%;
+  left: 9%;
 }
 .section-costs .label1 i {
   margin-right: 10px;
-  font-size: 25px;
+  font-size: 20px;
   color: #181d18;
 }
 .section-costs .label2 {
   top: 13%;
-  left: 36%;
+  left: 2%;
 }
 .section-costs .label2 i {
   margin-right: 10px;
-  font-size: 25px;
+  font-size: 20px;
   color: #181d18;
 }
 .section-costs .label3 {
-  top: 48%;
-  left: 4%;
+  top: 32%;
+  left: 22%;
 }
 .section-costs .label3 i {
   margin-right: 10px;
-  font-size: 25px;
+  font-size: 20px;
   color: #181d18;
 }
 .section-costs .label4 {
-  top: 58%;
-  left: 84%;
+  top: 87%;
+  left: 29%;
 }
 .section-costs .label4 i {
   margin-right: 10px;
-  font-size: 25px;
+  font-size: 20px;
   color: #181d18;
 }
 .section-costs .label5 {
-  top: 83%;
-  left: 7%;
+  top: 26%;
+  left: 16%;
 }
 .section-costs .label5 i {
   margin-right: 10px;
-  font-size: 25px;
+  font-size: 20px;
   color: #181d18;
 }
 .section-costs .label6 {
-  top: 20%;
-  left: 62%;
+  top: 39%;
+  left: 27%;
 }
 .section-costs .label6 i {
   margin-right: 10px;
-  font-size: 25px;
+  font-size: 20px;
   color: #181d18;
 }
 .section-costs .label7 {
-  top: 24%;
-  left: 88%;
+  top: 80%;
+  left: 21%;
 }
 .section-costs .label7 i {
   margin-right: 10px;
-  font-size: 25px;
+  font-size: 20px;
   color: #181d18;
 }
 .section-costs .label8 {
-  top: 65%;
-  left: 20%;
+  top: 72%;
+  left: 13%;
 }
 .section-costs .label8 i {
   margin-right: 10px;
-  font-size: 25px;
+  font-size: 20px;
   color: #181d18;
 }
 .section-costs .label9 {
-  top: 79%;
-  left: 76%;
+  top: 64%;
+  left: 4%;
 }
 .section-costs .label9 i {
   margin-right: 10px;
-  font-size: 25px;
+  font-size: 20px;
   color: #181d18;
 }
 .section-costs .more-services {
@@ -314,7 +319,7 @@
       -ms-flex-align: center;
           align-items: center;
   margin: auto;
-  margin-top: 2%;
+  margin-top: 4%;
   margin-bottom: 3%;
 }
 .section-costs .more-services .btn-more-services {

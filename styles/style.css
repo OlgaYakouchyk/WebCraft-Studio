@@ -262,8 +262,8 @@
 }
 .block-top .process-buttom .main-text {
   opacity: 0;
-  font-size: 120px;
-  line-height: 95px;
+  font-size: 93px;
+  line-height: 90px;
   font-weight: 600;
   text-align: center;
   margin: 80px 20px;
@@ -721,7 +721,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 25px;
+  gap: 15px;
 }
 .section-costs .costs-top .cost-section-left {
   width: 38%;
@@ -729,9 +729,9 @@
   text-align: start;
 }
 .section-costs .costs-top .cost-section-left h1 {
-  font-size: 40px;
-  line-height: 45px;
-  color: #ebffeb;
+  font-size: 30px;
+  line-height: 40px;
+  color: rgb(115, 120, 119);
   padding-top: 1%;
 }
 .section-costs .costs-top .cost-section-rigth {
@@ -745,9 +745,9 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .section-costs .costs-top .cost-section-rigth .cost-section2,
 .section-costs .costs-top .cost-section-rigth .cost-section3,
@@ -848,9 +848,14 @@
   color: #ebffeb;
   font-size: 25px;
 }
-.section-costs .costs-top .cost-section-rigth .cost-section2 .blok3 .what-include,
-.section-costs .costs-top .cost-section-rigth .cost-section3 .blok3 .what-include,
-.section-costs .costs-top .cost-section-rigth .cost-section4 .blok3 .what-include {
+.section-costs .costs-top .cost-section-rigth .cost-section2 .blok3 .btn-include,
+.section-costs .costs-top .cost-section-rigth .cost-section3 .blok3 .btn-include,
+.section-costs .costs-top .cost-section-rigth .cost-section4 .blok3 .btn-include {
+  border: none;
+  background-color: transparent;
+  font-size: 22px;
+  text-decoration: underline;
+  color: rgb(115, 120, 119);
   font-size: 22px;
   text-decoration: underline;
   color: rgb(115, 120, 119);
@@ -916,84 +921,84 @@
   }
 }
 .section-costs .label1 {
-  top: 22%;
-  left: 10%;
+  top: 20%;
+  left: 9%;
 }
 .section-costs .label1 i {
   margin-right: 10px;
-  font-size: 25px;
+  font-size: 20px;
   color: #181d18;
 }
 .section-costs .label2 {
   top: 13%;
-  left: 36%;
+  left: 2%;
 }
 .section-costs .label2 i {
   margin-right: 10px;
-  font-size: 25px;
+  font-size: 20px;
   color: #181d18;
 }
 .section-costs .label3 {
-  top: 48%;
-  left: 4%;
+  top: 32%;
+  left: 22%;
 }
 .section-costs .label3 i {
   margin-right: 10px;
-  font-size: 25px;
+  font-size: 20px;
   color: #181d18;
 }
 .section-costs .label4 {
-  top: 58%;
-  left: 84%;
+  top: 87%;
+  left: 29%;
 }
 .section-costs .label4 i {
   margin-right: 10px;
-  font-size: 25px;
+  font-size: 20px;
   color: #181d18;
 }
 .section-costs .label5 {
-  top: 83%;
-  left: 7%;
+  top: 26%;
+  left: 16%;
 }
 .section-costs .label5 i {
   margin-right: 10px;
-  font-size: 25px;
+  font-size: 20px;
   color: #181d18;
 }
 .section-costs .label6 {
-  top: 20%;
-  left: 62%;
+  top: 39%;
+  left: 27%;
 }
 .section-costs .label6 i {
   margin-right: 10px;
-  font-size: 25px;
+  font-size: 20px;
   color: #181d18;
 }
 .section-costs .label7 {
-  top: 24%;
-  left: 88%;
+  top: 80%;
+  left: 21%;
 }
 .section-costs .label7 i {
   margin-right: 10px;
-  font-size: 25px;
+  font-size: 20px;
   color: #181d18;
 }
 .section-costs .label8 {
-  top: 65%;
-  left: 20%;
+  top: 72%;
+  left: 13%;
 }
 .section-costs .label8 i {
   margin-right: 10px;
-  font-size: 25px;
+  font-size: 20px;
   color: #181d18;
 }
 .section-costs .label9 {
-  top: 79%;
-  left: 76%;
+  top: 64%;
+  left: 4%;
 }
 .section-costs .label9 i {
   margin-right: 10px;
-  font-size: 25px;
+  font-size: 20px;
   color: #181d18;
 }
 .section-costs .more-services {
@@ -1007,7 +1012,7 @@
       -ms-flex-align: center;
           align-items: center;
   margin: auto;
-  margin-top: 2%;
+  margin-top: 4%;
   margin-bottom: 3%;
 }
 .section-costs .more-services .btn-more-services {
@@ -1165,97 +1170,32 @@
   margin-top: 8px;
 }
 
-.modal-calculete-costs {
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
+
+.modal-what-in-price {
   display: none;
   background-color: #ebffeb;
   padding: 1%;
   position: fixed;
-  top: 50%;
+  top: 55%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: 1000;
-  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-.modal-calculete-costs .close-modal-costs {
-  font-size: 18px;
-  color: #181d18;
-}
-.modal-calculete-costs .costs-wrapper {
-  max-width: 800px;
-  padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-.modal-calculete-costs .costs-wrapper h3:first-of-type {
-  font-size: 20px;
-  color: #181d18;
-  margin-bottom: 3%;
-}
-.modal-calculete-costs .costs-wrapper p:first-of-type {
-  font-size: 15px;
-  color: #181d18;
-  margin-bottom: 5%;
-}
-.modal-calculete-costs .costs-wrapper .radio-option {
-  display: block;
-  position: relative;
-  padding-left: 30px;
-  margin-bottom: 15px;
-  font-size: 16px;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  color: #333;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.modal-calculete-costs .costs-wrapper .radio-option input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-}
-.modal-calculete-costs .costs-wrapper .radio-option::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 20px;
-  width: 20px;
-  background-color: white;
-  border: 2px solid #ccc;
-  border-radius: 50%;
-}
-input:checked + .modal-calculete-costs .costs-wrapper .radio-option::after {
-  content: "";
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  width: 12px;
-  height: 12px;
-  background-color: rgb(58, 139, 128);
-  border-radius: 50%;
-}
-input:checked + .modal-calculete-costs .costs-wrapper .radio-option {
-  color: rgb(58, 139, 128);
-}
-.modal-calculete-costs .costs-wrapper .radio-option:hover::before {
-  border-color: rgb(58, 139, 128);
-}
-.modal-calculete-costs .costs-wrapper .back-next {
+  max-height: 80vh;
+  overflow-y: auto;
+  width: 80%;
+  max-width: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1265,12 +1205,83 @@ input:checked + .modal-calculete-costs .costs-wrapper .radio-option {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-.modal-calculete-costs .costs-wrapper .back-next .btn-back {
-  border: none;
+.modal-what-in-price .close-modal-include {
+  font-size: 20px;
+  color: #181d18;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  margin-bottom: 2%;
 }
-.modal-calculete-costs .costs-wrapper .back-next .btn-next {
+.modal-what-in-price .modal-conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.modal-what-in-price .modal-conteiner .block {
+  margin: 2% 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 6px;
+}
+.modal-what-in-price .modal-conteiner .block::after {
+  content: "";
+  display: block;
+  width: 500px;
+  height: 0.5px;
+  background-color: #d1ddd1;
+  margin-top: 1%;
+}
+.modal-what-in-price .modal-conteiner .block h2 {
+  font-size: 22px;
+  color: #798a8d;
+}
+.modal-what-in-price .modal-conteiner .block h4 {
+  font-size: 17px;
+  color: #798a8d;
+}
+.modal-what-in-price .modal-conteiner .block p {
+  font-size: 13px;
+  color: #798a8d;
+}
+.modal-what-in-price .modal-conteiner button {
+  color: #ebffeb;
   border: none;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: rgb(54, 99, 93);
+  margin-top: 7%;
+  margin-bottom: 4%;
+  width: 250px;
+  border-radius: 14px;
+  padding: 4px;
 }
 
 * {

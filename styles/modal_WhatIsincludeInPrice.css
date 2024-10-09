@@ -1,0 +1,113 @@
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
+
+.modal-what-in-price {
+  display: none;
+  background-color: #ebffeb;
+  padding: 1%;
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1000;
+  max-height: 80vh;
+  overflow-y: auto;
+  width: 80%;
+  max-width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.modal-what-in-price .close-modal-include {
+  font-size: 20px;
+  color: #181d18;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  margin-bottom: 2%;
+}
+.modal-what-in-price .modal-conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.modal-what-in-price .modal-conteiner .block {
+  margin: 2% 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 6px;
+}
+.modal-what-in-price .modal-conteiner .block::after {
+  content: "";
+  display: block;
+  width: 500px;
+  height: 0.5px;
+  background-color: #d1ddd1;
+  margin-top: 1%;
+}
+.modal-what-in-price .modal-conteiner .block h2 {
+  font-size: 22px;
+  color: #798a8d;
+}
+.modal-what-in-price .modal-conteiner .block h4 {
+  font-size: 17px;
+  color: #798a8d;
+}
+.modal-what-in-price .modal-conteiner .block p {
+  font-size: 13px;
+  color: #798a8d;
+}
+.modal-what-in-price .modal-conteiner button {
+  color: #ebffeb;
+  border: none;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: rgb(54, 99, 93);
+  margin-top: 7%;
+  margin-bottom: 4%;
+  width: 250px;
+  border-radius: 14px;
+  padding: 4px;
+}
