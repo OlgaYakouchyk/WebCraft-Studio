@@ -1,0 +1,131 @@
+@import "variables";
+@import "mixins.scss";
+@import "header_style.scss";
+
+.reviews {
+  display: flex;
+  background: linear-gradient(to bottom, #9fbfae, #e2e3e3);
+  flex-direction: column;
+  width: 100%;
+
+  .review-start {
+    font-size: $sectionFont-Sise;
+    margin-top: $sectionMargin-top;
+    margin-left: $sectionMargin-left;
+    font-weight: $sectionFont-weight;
+  }
+  h1 {
+    opacity: 0;
+    font-size: 70px;
+    line-height: 80px;
+    font-weight: 600;
+    text-align: center;
+    margin: 70px auto;
+    width: 80%;
+
+    &.fade-in {
+      opacity: 1;
+      @include fade-in-text(2s, $darkgreen);
+    }
+  }
+
+  .arrows {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    gap: 50px;
+
+    .prev2,
+    .next2 {
+      width: 70px;
+      height: 70px;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+    .prev2 i,
+    .next2 i {
+      color: $darkgreen;
+      font-size: 50px;
+    }
+
+    .prev2:hover i,
+    .next2:hover i {
+      color: $ligthgreen; /* Изменение цвета при наведении */
+    }
+  }
+
+  .block-carusel2 {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    transition: margin-left 0.5s;
+    padding-right: 2%;
+
+    .block-review {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #101616;
+      border-radius: 20px;
+      width: 500px;
+      height: 250px;
+      flex-shrink: 0;
+      margin: 0 10px;
+      text-align: center;
+      box-sizing: border-box;
+      padding: 0 20px;
+      margin-bottom: 5px;
+      color: $textcolor;
+
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+
+        .top {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .top-left {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+            font-size: 19px;
+            margin: 20px;
+            text-align: start;
+
+            p:first-child{
+              color: $ligthgreen;
+            }
+          }
+        }
+
+        .bottom {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          margin-left: 20px;
+
+          p {
+            font-size: 19px;
+            color: $textcolor;
+            text-align: start;
+            margin-bottom: 20px;
+          }
+        }
+        .btn-read-more {
+          border: none;
+          text-decoration: underline;
+          color: $textcolor;
+          background-color: transparent;
+          font-size: 19px;
+        }
+      }
+    }
+  }
+}

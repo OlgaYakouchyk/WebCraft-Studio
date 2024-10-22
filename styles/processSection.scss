@@ -92,10 +92,6 @@
       cursor: pointer;
     }
 
-    //   .prev:hover, .next:hover{
-    //     background-color: $darkgreen;
-    // }
-
     .prev i,
     .next i {
       color: $darkgreen;
@@ -125,7 +121,7 @@
     background-color: #101616;
     border-radius: 20px;
     width: 400px;
-    height: 500px;
+    height: 400px;
     flex-shrink: 0;
     margin: 0 10px;
     text-align: center;
@@ -140,11 +136,11 @@
       padding: 20px 0;
     }
     p {
-      font-size: 25px;
+      font-size: 20px;
       font-weight: 300;
       color: #93a5a3;
       padding: 0 10px 25px;
-      line-height: 39px;
+      line-height: 27px;
     }
   }
 }

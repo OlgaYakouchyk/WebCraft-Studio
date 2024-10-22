@@ -7,6 +7,7 @@
 @import "costs.scss";
 @import "modalMoreServices.scss";
 @import "modal_WhatIsincludeInPrice.scss";
+@import "review";
 
 
 
@@ -15,6 +16,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body{
+scroll-behavior: smooth;
+}
+
 ul li{
     list-style: none;
 }
