@@ -1533,6 +1533,11 @@
 .reviews .block-carusel2 .block-review .wrapper .top .top-left p:first-child {
   color: #ebffeb;
 }
+.reviews .block-carusel2 .block-review .wrapper .top-rigth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .reviews .block-carusel2 .block-review .wrapper .bottom {
   display: -webkit-box;
   display: -ms-flexbox;
