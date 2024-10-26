@@ -84,6 +84,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const modalContentReview = document.querySelector(".modal-content-reviews");
   const closeModalReviews = document.querySelector(".close-modal-reviews");
 
+  // Скрываем модальное окно и затемнённый фон при загрузке страницы
+  modalReviews.style.display = "none";
+  modalWindow.style.display = "none";
+
   // открытие модального окна при клике на  кнопку read more
 
   document.querySelectorAll(".btn-read-more").forEach((button) => {

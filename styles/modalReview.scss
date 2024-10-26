@@ -1,36 +1,34 @@
 @import "variables.scss";
 
-// .modal-reviews {
-// //   display: none;
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   background-color: rgba(0, 0, 0, 0.7); // Затемнение фона
-//   z-index: 999;
-// }
+.modal-reviews {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); // Затемнение фона
+  z-index: 999;
+}
 
-// .modal-reviews-main {
-//   display: none;
-//   background-color: $darkgreen;
-//   padding: 1%;
-//   position: fixed;
-//   top: 55%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-//   z-index: 1000;
-//   max-height: 80vh; // ограничение высоты модального окна
-//   overflow-y: auto; // включаем вертикальную прокрутку, если контент превышает высоту
-//   width: 80%; // ширина модального окна
-//   max-width: 600px; // максимальная ширина
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   flex-direction: column;
+.modal-reviews-main {
+  background-color: $ligthgreen;
+  padding: 1%;
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  max-height: 80vh; // ограничение высоты модального окна
+  overflow-y: auto; // включаем вертикальную прокрутку, если контент превышает высоту
+  width: 80%; // ширина модального окна
+  max-width: 600px; // максимальная ширина
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  
 
-  .close-modal-include {
-    font-size: 20px;
+  .close-modal-reviews {
+    font-size: 25px;
     color: $darkgreen;
     position: absolute;
     top: 10px;
@@ -42,8 +40,13 @@
   .modal-content-reviews {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    color: $ligthgreen;
+    align-items: flex-start;
+    gap: 10px;
+    color: $textcolor;
+
+    p:first-child{
+      color: black;
+    }
+
   }
-// }
+}
