@@ -6,6 +6,7 @@
   z-index: 1000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   max-width: 1920px;
+  width: 100%;
 
 
   .header-conteiner {
@@ -19,7 +20,7 @@
       font-style: normal;
       color: $ligthgreen;
       margin-left: 2%;
-      font-size: 18px;
+      font-size: 24px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -77,6 +78,7 @@
 
     a{
       margin-right: 1%;
+      margin-top: -7px;
 
       .btn-discuss {
         border: none;
@@ -139,6 +141,9 @@
 
     .header-conteiner{
       .logo{
+        .logo-next{
+          margin-right: 4px;
+        }
         a{
             font-size: 15px;
         }
@@ -150,10 +155,12 @@
     }
   
   a{
+    margin-top: 0px;
     .btn-discuss{
       margin-right: 5px;
       height: 34px;
       margin-top: 2px;
+      margin-left: 35px;
   }
   }
     }
@@ -168,6 +175,9 @@
 
     .header-conteiner{
       .logo{
+      .logo-next{
+        font-size: 17px ;
+      }
         a{
             font-size: 13px;
         }
@@ -208,9 +218,9 @@
         margin-right: 5px;
       }
       a {
-       font-size: 8px;
-       margin-right: 5px;
-       margin-left: 3px
+       font-size: 9px;
+       margin-right: 7px;
+       margin-left: 5px
         }
       }
       .ul-header  li{
@@ -224,12 +234,12 @@
 
     a{
       .btn-discuss{
-        margin-right: 30px;
+        margin-right: -2px;
         height: 20px;
         margin-top: 2px;
         font-size: 9px;
         max-width: 90px;
-        margin-left: 13px;
+        margin-left: 16px;
     }
     }
 
