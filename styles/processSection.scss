@@ -55,9 +55,9 @@
         margin-bottom: 22px;
 
         &.fade-in {
-            opacity: 1;
-            @include fade-in-text(4s, $darkgreen);
-          }
+          opacity: 1;
+          @include fade-in-text(4s, $darkgreen);
+        }
       }
 
       .text-h4 {
@@ -68,9 +68,9 @@
         font-weight: 400;
 
         &.fade-in {
-            opacity: 1;
-            @include fade-in-text(6s, $darkgreen);
-          }
+          opacity: 1;
+          @include fade-in-text(6s, $darkgreen);
+        }
       }
     }
   }
@@ -157,4 +157,217 @@
   height: 50px;
   padding: 8px;
   margin-top: 8px;
+}
+
+@media (max-width: 1280px) {
+  .section3-process {
+    .block-top {
+      .process-top {
+        font-size: 35px;
+      }
+      .process-buttom {
+        .main-text {
+          font-size: 83px;
+          line-height: 78px;
+          margin: 70px 20px;
+        }
+        .process-buttom-buttom {
+          .text-h3 {
+            font-size: 45px;
+            line-height: 40px;
+          }
+          .text-h4 {
+            font-size: 35px;
+            line-height: 40px;
+          }
+        }
+      }
+      .arrows .prev i {
+        font-size: 55px;
+      }
+      .arrows .next i {
+        font-size: 55px;
+      }
+    }
+    .block-carusel .block {
+      width: 370px;
+      height: 350px;
+      h4 {
+        font-size: 28px;
+      }
+      .btn-discuss {
+        margin-top: -10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .section3-process {
+    .block-top {
+      .process-buttom {
+        .main-text {
+          font-size: 66px;
+          line-height: 66px;
+          margin: 50px 20px;
+        }
+        .process-buttom-buttom {
+          .text-h3 {
+            font-size: 38px;
+            line-height: 38px;
+          }
+          .text-h4 {
+            font-size: 27px;
+            line-height: 33px;
+            margin-bottom: 10px;
+          }
+        }
+      }
+      .arrows .prev i {
+        font-size: 45px;
+      }
+      .arrows .next i {
+        font-size: 45px;
+      }
+    }
+    .block-carusel .block {
+      width: 343px;
+
+      h4 {
+        font-size: 28px;
+      }
+      .btn-discuss {
+        margin-top: -10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  .section3-process {
+    .block-top {
+      .process-top {
+        font-size: 30px;
+      }
+      .process-buttom {
+        .main-text {
+          font-size: 50px;
+          line-height: 50px;
+          margin: 40px 20px;
+        }
+        .process-buttom-buttom {
+          margin-left: 70%;
+          margin-top: 1%;
+
+          .text-h3 {
+            font-size: 27px;
+            line-height: 25px;
+            max-width: 400px;
+          }
+          .text-h4 {
+            font-size: 21px;
+            line-height: 25px;
+            max-width: 400px;
+            margin-bottom: 0;
+          }
+        }
+      }
+      .arrows {
+        margin-left: 3%;
+        gap: 10px;
+        .prev i {
+          font-size: 40px;
+        }
+        .next i {
+          font-size: 40px;
+        }
+      }
+    }
+    .block-carusel .block {
+      width: 315px;
+      height: 322px;
+      h4 {
+        font-size: 25px;
+      }
+      p {
+        font-size: 15px;
+        line-height: 20px;
+      }
+      .btn-discuss {
+        margin-top: -5px;
+        margin-left: 5%;
+        width: 230px;
+        height: 45px;
+      }
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .section3-process {
+    width: 100%;
+    max-width: 460px;
+    .block-top {
+      
+      .process-top {
+        font-size: 17px;
+        margin-top: 10px;
+        margin-left: 10px;
+      }
+      .process-buttom {
+        align-items: start;
+        .main-text {
+          font-size: 23px;
+          line-height: 23px;
+          margin: 25px 50px;
+          max-width: 350px;
+        }
+        .process-buttom-buttom {
+          margin-left: 15%;
+          margin-top: 1%;
+
+          .text-h3 {
+            font-size: 15px;
+            line-height: 15px;
+            max-width: 350px;
+            margin-bottom: 1%;
+          }
+          .text-h4 {
+            font-size: 14px;
+            line-height: 15px;
+            max-width: 350px;
+            
+          }
+        }
+      }
+      .arrows {
+        margin-left: 1%;
+        gap: 1px;
+        margin-bottom: 1%;
+        .prev i {
+          font-size: 25px;
+        }
+        .next i {
+          font-size: 25px;
+        }
+      }
+    }
+    .block-carusel .block {
+      width: 315px;
+      height: 322px;
+      h4 {
+        font-size: 25px;
+      }
+      p {
+        font-size: 15px;
+        line-height: 20px;
+      }
+      .btn-discuss {
+        margin-top: -5px;
+        margin-left: 5%;
+        width: 230px;
+        height: 45px;
+      }
+    }
+  }
 }

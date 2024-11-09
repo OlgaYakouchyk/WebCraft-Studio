@@ -45,8 +45,8 @@
 .main-header .header-conteiner .logo a i {
   color: #ebffeb;
 }
-.main-header .header-conteiner .logo a:hover, .main-header .header-conteiner .logo a:focus {
-  color: rgb(2, 65, 33);
+.main-header .header-conteiner .logo a i:hover, .main-header .header-conteiner .logo a i:focus {
+  color: rgb(58, 139, 128);
   text-decoration: none;
 }
 .main-header .header-conteiner .ul-header {
@@ -79,7 +79,7 @@
   text-decoration: none;
 }
 .main-header .header-conteiner li a:hover, .main-header .header-conteiner li a:focus {
-  color: black;
+  color: rgb(58, 139, 128);
   text-decoration: none;
 }
 .main-header .header-conteiner a {
@@ -98,6 +98,10 @@
   height: 50px;
   padding: 8px;
   margin-top: 8px;
+}
+.main-header .header-conteiner a .btn-discuss:hover, .main-header .header-conteiner a .btn-discuss:focus {
+  color: rgb(58, 139, 128);
+  text-decoration: none;
 }
 
 @media (max-width: 1280px) {

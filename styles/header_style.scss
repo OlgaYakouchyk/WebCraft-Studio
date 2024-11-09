@@ -34,13 +34,15 @@
 
         i {
           color: $ligthgreen;
-        }
 
-        &:hover,
-        &:focus {
-          color: rgb(2, 65, 33);
+          &:hover,
+          &:focus {
+          color: $green;
           text-decoration: none;
         }
+        }
+
+        
       }
     }
 
@@ -70,7 +72,7 @@
 
         &:hover,
         &:focus {
-          color: black;
+          color: $green;
           text-decoration: none;
         }
       }
@@ -92,6 +94,12 @@
         height: 50px;
         padding: 8px;
         margin-top: 8px;
+
+        &:hover,
+        &:focus {
+        color: $green;
+        text-decoration: none;
+      }
       }
     }
    

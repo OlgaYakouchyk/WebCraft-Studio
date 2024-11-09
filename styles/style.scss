@@ -34,8 +34,20 @@ ul li{
 @media(max-width: 1280px){
     .main-conteiner{
         max-width: 100%;
-
-        
     }
-
+}
+@media(max-width: 1024px){
+    .main-conteiner{
+        max-width: 100%;
+    }
+}
+@media(max-width: 760px){
+    .main-conteiner{
+        max-width: 100%;
+    }
+}
+@media(max-width: 460px){
+    .main-conteiner{
+        max-width: 100%;
+    }
 }
