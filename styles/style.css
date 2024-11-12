@@ -232,12 +232,9 @@
     font-size: 8px;
   }
   .main-header .header-conteiner a .btn-discuss {
-    margin-right: -2px;
-    height: 20px;
-    margin-top: 2px;
-    font-size: 9px;
-    max-width: 90px;
-    margin-left: 16px;
+    font-size: 8px;
+    max-width: 79px;
+    margin-left: 7px;
   }
 }
 .video-section2 {
@@ -489,12 +486,9 @@
     font-size: 8px;
   }
   .main-header .header-conteiner a .btn-discuss {
-    margin-right: -2px;
-    height: 20px;
-    margin-top: 2px;
-    font-size: 9px;
-    max-width: 90px;
-    margin-left: 16px;
+    font-size: 8px;
+    max-width: 79px;
+    margin-left: 7px;
   }
 }
 .section3-process {
@@ -867,6 +861,67 @@
   .section3-process .block-top .process-buttom .process-buttom-buttom {
     margin-left: 15%;
     margin-top: 1%;
+  }
+  .section3-process .block-top .process-buttom .process-buttom-buttom .text-h3 {
+    font-size: 15px;
+    line-height: 15px;
+    max-width: 350px;
+    margin-bottom: 1%;
+  }
+  .section3-process .block-top .process-buttom .process-buttom-buttom .text-h4 {
+    font-size: 14px;
+    line-height: 15px;
+    max-width: 350px;
+  }
+  .section3-process .block-top .arrows {
+    margin-left: 1%;
+    gap: 1px;
+    margin-bottom: 1%;
+  }
+  .section3-process .block-top .arrows .prev i {
+    font-size: 25px;
+  }
+  .section3-process .block-top .arrows .next i {
+    font-size: 25px;
+  }
+  .section3-process .block-carusel .block {
+    width: 260px;
+    height: 170px;
+  }
+  .section3-process .block-carusel .block h4 {
+    font-size: 15px;
+    padding: 7px;
+  }
+  .section3-process .block-carusel .block p {
+    font-size: 10px;
+    line-height: 10px;
+    padding: 7px;
+  }
+  .section3-process .block-carusel .block .btn-discuss {
+    margin-top: 5px;
+    margin-left: 5%;
+    width: 150px;
+    font-size: 14px;
+    height: 34px;
+  }
+}
+@media (max-width: 420px) {
+  .section3-process {
+    width: 100%;
+    max-width: 420px;
+  }
+  .section3-process .block-top .process-buttom {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .section3-process .block-top .process-buttom .main-text {
+    margin: 22px 30px;
+  }
+  .section3-process .block-top .process-buttom .process-buttom-buttom {
+    margin-left: 35%;
+    margin-top: 1%;
+    max-width: 250px;
   }
   .section3-process .block-top .process-buttom .process-buttom-buttom .text-h3 {
     font-size: 15px;
@@ -1984,12 +2039,9 @@
     font-size: 8px;
   }
   .main-header .header-conteiner a .btn-discuss {
-    margin-right: -2px;
-    height: 20px;
-    margin-top: 2px;
-    font-size: 9px;
-    max-width: 90px;
-    margin-left: 16px;
+    font-size: 8px;
+    max-width: 79px;
+    margin-left: 7px;
   }
 }
 .reviews {
