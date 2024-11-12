@@ -215,3 +215,24 @@
     margin-left: 16px;
   }
 }
+@media (max-width: 420px) {
+  .main-header {
+    width: 90%;
+    max-width: 420px;
+  }
+  .main-header .header-conteiner .logo a {
+    font-size: 8px;
+  }
+  .main-header .header-conteiner .ul-header li {
+    margin-top: 0px;
+    margin-left: -6px;
+  }
+  .main-header .header-conteiner .ul-header li a {
+    font-size: 8px;
+  }
+  .main-header .header-conteiner a .btn-discuss {
+    font-size: 8px;
+    max-width: 79px;
+    margin-left: 7px;
+  }
+}

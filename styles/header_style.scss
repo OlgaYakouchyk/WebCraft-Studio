@@ -254,3 +254,35 @@
     }
   }
  }
+
+ @media(max-width: 420px){
+  .main-header {
+    width: 90%;
+    max-width: 420px;
+
+    .header-conteiner{
+    .logo{ 
+      a {
+       font-size: 8px;
+        }
+      }
+      .ul-header  li{
+        margin-top: 0px;
+        margin-left: -6px;
+  
+       a{
+  font-size: 8px;
+       }
+    }
+
+    a{
+      .btn-discuss{
+        font-size: 8px;
+        max-width: 79px;
+        margin-left: 7px;
+    }
+    }
+
+    }
+  }
+ }

@@ -216,6 +216,30 @@
     margin-left: 16px;
   }
 }
+@media (max-width: 420px) {
+  .main-header {
+    width: 90%;
+    max-width: 420px;
+  }
+  .main-header .header-conteiner .logo a {
+    font-size: 8px;
+  }
+  .main-header .header-conteiner .ul-header li {
+    margin-top: 0px;
+    margin-left: -6px;
+  }
+  .main-header .header-conteiner .ul-header li a {
+    font-size: 8px;
+  }
+  .main-header .header-conteiner a .btn-discuss {
+    margin-right: -2px;
+    height: 20px;
+    margin-top: 2px;
+    font-size: 9px;
+    max-width: 90px;
+    margin-left: 16px;
+  }
+}
 .reviews {
   display: -webkit-box;
   display: -ms-flexbox;
