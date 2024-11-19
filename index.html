@@ -14,39 +14,37 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
-   
 
-
-  <title>WebCraft Studio - Web Development and Digital Marketing Services</title>
-  <meta name="description" content="WebCraft Studio offers professional web development, responsive designs, and complete digital marketing solutions to help businesses grow and succeed online.">
+    <title>
+      WebCraft Studio - Web Development and Digital Marketing Services
+    </title>
+    <meta
+      name="description"
+      content="WebCraft Studio offers professional web development, responsive designs, and complete digital marketing solutions to help businesses grow and succeed online."
+    />
   </head>
   <body>
     <div class="main-conteiner">
-      <div class="main-header">
+      <!-- HERE IS SECTION HEADER -->
+
+      <header class="main-header">
         <div class="header-conteiner">
-          <div class="logo">
-            <div class="logo-next">WebCraft Studio</div>
-            <a href="https://github.com/OlgaYakouchyk"
-              ><i class="fa-brands fa-github fa-2xl"></i
-            ></a>
-            <a href="https://www.linkedin.com/in/volha-yakouchyk-3ba9bb27a/"
-              ><i class="fa-brands fa-linkedin fa-2xl"></i
-            ></a>
-            <a href="https://www.instagram.com/wedcraft_studio/"
-              ><i class="fa-brands fa-instagram fa-2xl"></i></a>
-          </div>
-          <ul class="ul-header">
-            <li><a href="#process" onclick="">Process</a></li>
-            <li><a href="#services" onclick="">Services</a></li>
-            <li><a href="#costs" onclick="">Costs</a></li>
-            <li><a href="#projects" onclick="">Projects</a></li>
-            <li><a href="#reviews" onclick="">Reviews</a></li>
-          </ul>
+          <div class="logo" onclick="">WebCraft Studio</div>
+          <nav>
+            <ul class="ul-header">
+              <li><a href="#process" onclick="">Process</a></li>
+              <li><a href="#services" onclick="">Services</a></li>
+              <li><a href="#costs" onclick="">Costs</a></li>
+              <li><a href="#projects" onclick="">Projects</a></li>
+              <li><a href="#reviews" onclick="">Reviews</a></li>
+            </ul>
+          </nav>
+
           <a href="http://t.me/OlgaYakouchyk" target="_blank"
             ><button class="btn-discuss">Discuss the project</button></a
           >
         </div>
-      </div>
+      </header>
 
       <!-- СДЕСЬ ВИДИО СЕКЦИЯ -->
 
@@ -178,7 +176,6 @@
           </div>
         </div>
       </section>
-
 
       <!-- *** SECTION SERVICES *** -->
       <section id="services" class="section-services">
@@ -348,7 +345,9 @@
                   ><button class="btn-discuss">Discuss the project</button></a
                 >
 
-                <button class="btn-include">What is included in the price?</button>
+                <button class="btn-include">
+                  What is included in the price?
+                </button>
               </div>
             </div>
 
@@ -396,98 +395,96 @@
                 <!-- MODAL WINDOW What is included in the price? -->
 
                 <div class="modal-overlay"></div>
-                
-                  <button class="btn-include">
-                    What is included in the price?
-                  </button>
-                  <div class="modal-what-in-price" style="display: none">
-                    <span class="close-modal-include" id="close-modal-include"
-                      >&times;</span
-                    >
-                    <div class="modal-conteiner">
-                      <div class="block">
-                        <h2>// Introduction</h2>
-                        <h4>≈ 15-30 minutes by phone or Google Meet</h4>
-                        <p>We will have a call to discuss the task.</p>
-                        <p>
-                          You will talk about your project and the goal you want
-                          to achieve with the website, and I will ask clarifying
-                          questions.
-                        </p>
-                      </div>
 
-                      <div class="block">
-                        <h2>// Commercial offer</h2>
-                        <h4>≈1-2 hours</h4>
-                        <p>
-                          After the introduction, I will prepare a commercial
-                          offer, where I will describe the website structure,
-                          the work stages, and suggest cooperation options.
-                        </p>
-                      </div>
-                      <div class="block">
-                        <h2>// Briefing</h2>
-                        <h4>≈1-2 hours</h4>
-                        <p>
-                          We will have a call to decide on the website style and
-                          references. I will gather key information about the
-                          project needed for website development.
-                        </p>
-                      </div>
-                      <div class="block">
-                        <h2>
-                          // Technical specification, contract, and work schedule
-                        </h2>
-                        <h4>≈1-2 hours</h4>
-                        <p>
-                          I will prepare the technical specification and
-                          contract. We will sign the documents, and you will
-                          make a prepayment. I will also outline the work
-                          schedule so that you can conveniently track the
-                          process.
-                        </p>
-                      </div>
-                      <div class="block">
-                        <h2>// Selling structure and copywriting</h2>
-                        <h4>≈3-7 working days</h4>
-                        <p>
-                          I will create a logical and user-friendly website
-                          structure. I will edit or write the selling copy from
-                          scratch and make a schematic prototype.
-                        </p>
-                      </div>
-                      <div class="block">
-                        <h2>// Design concept</h2>
-                        <h4>≈10-14 working days</h4>
-                        <p>
-                          Based on the marketing analysis and your references, I
-                          will develop a design concept for the website. We will
-                          approve it, and I will design all the pages.
-                        </p>
-                      </div>
-                      <div class="block">
-                        <h2>// Responsive website development on WordPress</h2>
-                        <h4>≈4-10 working days</h4>
-                        <p>
-                          I will build the website on WordPress, adapt it for
-                          different devices, add animations, and set up forms,
-                          domain, payment systems, basic SEO, etc.
-                        </p>
-                      </div>
-                      <div class="block">
-                        <h2>// Bonuses</h2>
-                        <p>1-2 weeks of free website support</p>
-                        <p>Instructions on how to manage the website</p>
-                      </div>
-
-                      <a href="http://t.me/OlgaYakouchyk" target="_blank"
-                        ><button class="btn-discusss">
-                          Discuss the project
-                        </button></a
-                      >
+                <button class="btn-include">
+                  What is included in the price?
+                </button>
+                <div class="modal-what-in-price" style="display: none">
+                  <span class="close-modal-include" id="close-modal-include"
+                    >&times;</span
+                  >
+                  <div class="modal-conteiner">
+                    <div class="block">
+                      <h2>// Introduction</h2>
+                      <h4>≈ 15-30 minutes by phone or Google Meet</h4>
+                      <p>We will have a call to discuss the task.</p>
+                      <p>
+                        You will talk about your project and the goal you want
+                        to achieve with the website, and I will ask clarifying
+                        questions.
+                      </p>
                     </div>
+
+                    <div class="block">
+                      <h2>// Commercial offer</h2>
+                      <h4>≈1-2 hours</h4>
+                      <p>
+                        After the introduction, I will prepare a commercial
+                        offer, where I will describe the website structure, the
+                        work stages, and suggest cooperation options.
+                      </p>
+                    </div>
+                    <div class="block">
+                      <h2>// Briefing</h2>
+                      <h4>≈1-2 hours</h4>
+                      <p>
+                        We will have a call to decide on the website style and
+                        references. I will gather key information about the
+                        project needed for website development.
+                      </p>
+                    </div>
+                    <div class="block">
+                      <h2>
+                        // Technical specification, contract, and work schedule
+                      </h2>
+                      <h4>≈1-2 hours</h4>
+                      <p>
+                        I will prepare the technical specification and contract.
+                        We will sign the documents, and you will make a
+                        prepayment. I will also outline the work schedule so
+                        that you can conveniently track the process.
+                      </p>
+                    </div>
+                    <div class="block">
+                      <h2>// Selling structure and copywriting</h2>
+                      <h4>≈3-7 working days</h4>
+                      <p>
+                        I will create a logical and user-friendly website
+                        structure. I will edit or write the selling copy from
+                        scratch and make a schematic prototype.
+                      </p>
+                    </div>
+                    <div class="block">
+                      <h2>// Design concept</h2>
+                      <h4>≈10-14 working days</h4>
+                      <p>
+                        Based on the marketing analysis and your references, I
+                        will develop a design concept for the website. We will
+                        approve it, and I will design all the pages.
+                      </p>
+                    </div>
+                    <div class="block">
+                      <h2>// Responsive website development on WordPress</h2>
+                      <h4>≈4-10 working days</h4>
+                      <p>
+                        I will build the website on WordPress, adapt it for
+                        different devices, add animations, and set up forms,
+                        domain, payment systems, basic SEO, etc.
+                      </p>
+                    </div>
+                    <div class="block">
+                      <h2>// Bonuses</h2>
+                      <p>1-2 weeks of free website support</p>
+                      <p>Instructions on how to manage the website</p>
+                    </div>
+
+                    <a href="http://t.me/OlgaYakouchyk" target="_blank"
+                      ><button class="btn-discusss">
+                        Discuss the project
+                      </button></a
+                    >
                   </div>
-                
+                </div>
               </div>
             </div>
           </div>
@@ -607,14 +604,14 @@
         </div>
       </section>
 
-
-
       <!-- SECTION REVIEW -->
 
       <section id="reviews" class="reviews">
         <div class="review-start">// Reviews</div>
-        <h1 class="h1-revies fade-in">CLIENTS  SAY THAT  IT IS COMFORTABLE TO WORK WITH ME.</h1>
-        
+        <h1 class="h1-revies fade-in">
+          CLIENTS SAY THAT IT IS COMFORTABLE TO WORK WITH ME.
+        </h1>
+
         <div class="arrows">
           <button class="prev2">
             <i class="fa-solid fa-arrow-left fa-xl"></i>
@@ -625,7 +622,6 @@
         </div>
 
         <div class="block-carusel2">
-
           <div class="block-review">
             <div class="wrapper">
               <div class="top">
@@ -636,10 +632,16 @@
                 <div class="top-rigth"><span>★★★★★</span></div>
               </div>
               <div class="bottom">
-                <p>I really like the visuals! The information has become more clear, understandable, and definitely more aesthetically pleasing…</p>
-                <button class="btn-read-more" data-info="Nadya Kosova">Read more</button>
+                <p>
+                  I really like the visuals! The information has become more
+                  clear, understandable, and definitely more aesthetically
+                  pleasing…
+                </p>
+                <button class="btn-read-more" data-info="Nadya Kosova">
+                  Read more
+                </button>
               </div>
-                          </div>
+            </div>
           </div>
           <div class="block-review">
             <div class="wrapper">
@@ -651,10 +653,15 @@
                 <div class="top-rigth"><span>★★★★★</span></div>
               </div>
               <div class="bottom">
-                <p>I am satisfied with the result, I liked that adjustments were made promptly. It's also great that…</p>
-                <button class="btn-read-more" data-info="Anna Kirbay">Read more</button>
+                <p>
+                  I am satisfied with the result, I liked that adjustments were
+                  made promptly. It's also great that…
+                </p>
+                <button class="btn-read-more" data-info="Anna Kirbay">
+                  Read more
+                </button>
               </div>
-                          </div>
+            </div>
           </div>
           <div class="block-review">
             <div class="wrapper">
@@ -666,10 +673,16 @@
                 <div class="top-rigth"><span>★★★★★</span></div>
               </div>
               <div class="bottom">
-                <p>I am thrilled with the presentation: everything is clear and structured, thank you for all the comments, they will definitely help with the work…</p>
-                <button class="btn-read-more" data-info="Tanya Kazina">Read more</button>
+                <p>
+                  I am thrilled with the presentation: everything is clear and
+                  structured, thank you for all the comments, they will
+                  definitely help with the work…
+                </p>
+                <button class="btn-read-more" data-info="Tanya Kazina">
+                  Read more
+                </button>
               </div>
-                          </div>
+            </div>
           </div>
           <div class="block-review">
             <div class="wrapper">
@@ -681,10 +694,15 @@
                 <div class="top-rigth"><span>★★★★★</span></div>
               </div>
               <div class="bottom">
-                <p>The website turned out great! You are amazing, I haven't seen such speed and precision in a thousand years ✨ Thank you for…</p>
-                <button class="btn-read-more" data-info="Kristina Izotova">Read more</button>
+                <p>
+                  The website turned out great! You are amazing, I haven't seen
+                  such speed and precision in a thousand years ✨ Thank you for…
+                </p>
+                <button class="btn-read-more" data-info="Kristina Izotova">
+                  Read more
+                </button>
               </div>
-                          </div>
+            </div>
           </div>
           <div class="block-review">
             <div class="wrapper">
@@ -696,10 +714,16 @@
                 <div class="top-rigth"><span>★★★★★</span></div>
               </div>
               <div class="bottom">
-                <p>Thank you so much for the work, it turned out beautifully and perfectly : I really enjoyed working with you. I will definitely…</p>
-                <button class="btn-read-more" data-info="Aleksey Ryzhov">Read more</button>
+                <p>
+                  Thank you so much for the work, it turned out beautifully and
+                  perfectly : I really enjoyed working with you. I will
+                  definitely…
+                </p>
+                <button class="btn-read-more" data-info="Aleksey Ryzhov">
+                  Read more
+                </button>
               </div>
-                          </div>
+            </div>
           </div>
           <div class="block-review">
             <div class="wrapper">
@@ -711,29 +735,42 @@
                 <div class="top-rigth"><span>★★★★★</span></div>
               </div>
               <div class="bottom">
-                <p>Your websites are really awesome Yesterday we discussed the beauty of your work and realized that even in our wildest dreams, we wouldn't have created something like that…</p>
-                <button class="btn-read-more" data-info="Kseniya Kott">Read more</button>
+                <p>
+                  Your websites are really awesome Yesterday we discussed the
+                  beauty of your work and realized that even in our wildest
+                  dreams, we wouldn't have created something like that…
+                </p>
+                <button class="btn-read-more" data-info="Kseniya Kott">
+                  Read more
+                </button>
               </div>
-                          </div>
+            </div>
           </div>
         </div>
 
-
-<!-- MODAL REVIEW -->
-
+        <!-- MODAL REVIEW -->
 
         <div class="modal-reviews"></div>
-        <div class="modal-reviews-main" style="display: none;">
-          <span class="close-modal-reviews" id="close-modal-reviews">&times;</span>
-          <div class="modal-content-reviews"></div> <!-- Контент будет динамически обновляться -->
+        <div class="modal-reviews-main" style="display: none">
+          <span class="close-modal-reviews" id="close-modal-reviews"
+            >&times;</span
+          >
+          <div class="modal-content-reviews"></div>
+          <!-- Контент будет динамически обновляться -->
         </div>
-
-
-
-
       </section>
 
-
+      <footer>
+        <a href="https://github.com/OlgaYakouchyk"
+          ><i class="fa-brands fa-github fa-2xl"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/volha-yakouchyk-3ba9bb27a/"
+          ><i class="fa-brands fa-linkedin fa-2xl"></i
+        ></a>
+        <a href="https://www.instagram.com/wedcraft_studio/"
+          ><i class="fa-brands fa-instagram fa-2xl"></i
+        ></a>
+      </footer>
     </div>
 
     <script
