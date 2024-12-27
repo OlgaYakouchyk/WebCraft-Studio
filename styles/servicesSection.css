@@ -6,7 +6,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #101616;
+  background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(black), color-stop(#01200a), to(#005d22));
+  background: linear-gradient(to top, black, black, #01200a, #005d22);
 }
 .section-services .srvice-top {
   font-size: 40px;

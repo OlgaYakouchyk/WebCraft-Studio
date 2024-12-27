@@ -1,10 +1,10 @@
 @import "variables.scss";
 
 .main-header {
-  background-color: #1c3035;
+  background-color: black;
   position: fixed;
   z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(56, 56, 55, 0.043);
   max-width: 1920px;
   width: 100%;
 
@@ -12,23 +12,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.7%;
+    
 
     .logo {
-      font-weight: 500;
-      font-style: normal;
-      color: $ligthgreen;
-      margin-left: 2%;
-      font-size: 24px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      &:hover,
-      &:focus {
-        color: $green;
-        text-decoration: none;
+     margin-left: 3%;
+      img{
+        width: 80px;
+        height: 80px;
       }
+      
     }
 
     .ul-header {
@@ -36,9 +28,8 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background-color: $ligthgreen;
-      border-radius: 20px;
       padding-left: 2%;
+      gap: 15px;
     }
 
     li {
@@ -46,7 +37,7 @@
       padding-top: 2%;
 
       a {
-        color: $darkgreen;
+        color: $ligthgreen;
         font-weight: 400;
         font-size: 20px;
         text-decoration: none;

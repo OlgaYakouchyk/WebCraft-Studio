@@ -17,19 +17,22 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+   
 }
 
 body{
 scroll-behavior: smooth;
+font-family: "Roboto", sans-serif;
+background-color: black;
 }
 
 ul li{
     list-style: none;
 }
 
-.main-conteiner{
+main{
     max-width: 1920px;
-    font-family: "Roboto", sans-serif;
+    
 }
 
 @media(max-width: 1280px){

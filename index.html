@@ -3,17 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./utility/reset.css">
+    <link rel="stylesheet" href="./utility/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="./styles/style.css" />
 
     <title>
       WebCraft Studio - Web Development and Digital Marketing Services
@@ -24,35 +26,36 @@
     />
   </head>
   <body>
-    <div class="main-conteiner">
-      <!-- HERE IS SECTION HEADER -->
+    <!-- HERE IS SECTION HEADER -->
 
-      <header class="main-header">
-        <div class="header-conteiner">
-          <div class="logo" onclick="">WebCraft Studio</div>
-          <nav>
-            <ul class="ul-header">
-              <li><a href="#process" onclick="">Process</a></li>
-              <li><a href="#services" onclick="">Services</a></li>
-              <li><a href="#costs" onclick="">Costs</a></li>
-              <li><a href="#projects" onclick="">Projects</a></li>
-              <li><a href="#reviews" onclick="">Reviews</a></li>
-            </ul>
-          </nav>
-
-          <a href="http://t.me/OlgaYakouchyk" target="_blank"
-            ><button class="btn-discuss">Discuss the project</button></a
-          >
+    <header class="main-header">
+      <div class="header-conteiner">
+        <div class="logo" onclick="">
+          <img src="./img/header/WebCraftStudio.png" alt="logo">
         </div>
-      </header>
+        <nav>
+          <ul class="ul-header">
+            <li><a href="#process" onclick="">Process</a></li>
+            <li><a href="#services" onclick="">Services</a></li>
+            <li><a href="#costs" onclick="">Costs</a></li>
+            <li><a href="#projects" onclick="">Projects</a></li>
+            <li><a href="#reviews" onclick="">Reviews</a></li>
+          </ul>
+        </nav>
 
-      <!-- СДЕСЬ ВИДИО СЕКЦИЯ -->
+        <a href="http://t.me/OlgaYakouchyk" target="_blank"
+          ><button class="btn-discuss">Discuss the project</button></a
+        >
+      </div>
+    </header>
 
-      <div class="video-section2">
-        <div class="video-class">
-          <video autoplay muted loop>
-            <source src="./video/Where Ideas Go Live.mp4" />
-          </video>
+    <!-- СДЕСЬ ВИДИО СЕКЦИЯ -->
+    <main>
+      <div class="main-paige">
+        <div class="main-paige-wrapper">
+          <h1>Where Ideas Go Live</h1>
+          <h2>I design websites based on marketing and analysis</h2>
+          <h3>Web Solutions That Work</h3>
         </div>
       </div>
 
@@ -759,8 +762,10 @@
           <!-- Контент будет динамически обновляться -->
         </div>
       </section>
+    </main>
 
-      <footer>
+    <footer>
+      <nav>
         <a href="https://github.com/OlgaYakouchyk"
           ><i class="fa-brands fa-github fa-2xl"></i
         ></a>
@@ -770,8 +775,8 @@
         <a href="https://www.instagram.com/wedcraft_studio/"
           ><i class="fa-brands fa-instagram fa-2xl"></i
         ></a>
-      </footer>
-    </div>
+      </nav>
+    </footer>
 
     <script
       type="text/javascript"

@@ -1,5 +1,5 @@
 .section-costs {
-  background-color: #101616;
+  background-color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -179,7 +179,7 @@
   cursor: pointer;
 }
 .section-costs .costs-top .btn-costs:hover {
-  background-color: rgb(58, 139, 128);
+  background-color: rgb(4, 230, 38);
 }
 .section-costs .floating-label {
   position: absolute;
@@ -194,8 +194,8 @@
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-box-shadow: 0px 2px 11px rgb(58, 139, 128);
-          box-shadow: 0px 2px 11px rgb(58, 139, 128);
+  -webkit-box-shadow: 0px 2px 11px rgb(4, 230, 38);
+          box-shadow: 0px 2px 11px rgb(4, 230, 38);
   -webkit-animation: float 3s ease-in-out infinite;
           animation: float 3s ease-in-out infinite;
 }
@@ -347,5 +347,5 @@
   margin: 0 20px;
 }
 .section-costs .more-services .btn-more-services:hover::before, .section-costs .more-services .btn-more-services:hover::after {
-  background-color: rgb(58, 139, 128);
+  background-color: rgb(4, 230, 38);
 }

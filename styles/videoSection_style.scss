@@ -1,16 +1,43 @@
-.video-section2{
+.main-paige{
     max-width: 1920px;
     overflow: hidden;
     position: relative;
+    width: 100%;
+    background-image: url("../img/img1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
-    .video-class{
-        width: 100%;
 
-        video{
-            width: 100%;
-            object-fit: cover;
-            object-position: center;
+    .main-paige-wrapper{
+        display: flex;
+        flex-direction: column;
+        
+
+        h1{
+            margin: 10% 0 5% 10%;
+            background: linear-gradient(to right, #F7FFF6, #A7FFBD);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 65px;
         }
+        h2{
+            font-size: 60px;
+            margin: 0 auto;
+            background: linear-gradient(to right, #DBFFE0, #A0FF94);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            width: 750px;
+            margin-bottom: 5%;
 
+        }
+        h3{
+            font-size: 48px;
+            margin-left: 55%;
+            margin-bottom: 5%;
+            background: linear-gradient(to right, #C1FFC9, #78FF37);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     }
 }
