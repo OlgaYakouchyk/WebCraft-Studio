@@ -2,21 +2,14 @@
   background-color: black;
   position: fixed;
   z-index: 1000;
-  -webkit-box-shadow: 0 2px 4px rgba(56, 56, 55, 0.043);
-          box-shadow: 0 2px 4px rgba(56, 56, 55, 0.043);
+  box-shadow: 0 2px 4px rgba(56, 56, 55, 0.043);
   max-width: 1920px;
   width: 100%;
 }
 .main-header .header-conteiner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 .main-header .header-conteiner .logo {
   margin-left: 3%;
@@ -27,15 +20,9 @@
 }
 .main-header .header-conteiner .ul-header {
   list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   padding-left: 2%;
   gap: 15px;
 }
@@ -44,37 +31,33 @@
   padding-top: 2%;
 }
 .main-header .header-conteiner li a {
-  color: #ebffeb;
+  color: rgba(208, 241, 255, 0.5490196078);
   font-weight: 400;
   font-size: 20px;
   text-decoration: none;
 }
 .main-header .header-conteiner li a:hover, .main-header .header-conteiner li a:focus {
-  color: rgb(4, 230, 38);
+  color: rgb(2, 214, 234);
   text-decoration: none;
 }
 .main-header .header-conteiner a {
   display: block;
   margin-right: 3%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .main-header .header-conteiner a .btn-discuss {
   border: none;
-  background-color: #ebffeb;
-  color: #181d18;
+  background-color: rgba(208, 241, 255, 0.5490196078);
+  color: #012854;
   font-size: 22px;
   border-radius: 20px;
   width: 250px;
   font-weight: 600;
   height: 50px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .main-header .header-conteiner a .btn-discuss:hover, .main-header .header-conteiner a .btn-discuss:focus {
-  color: rgb(4, 230, 38);
+  color: rgb(2, 214, 234);
   text-decoration: none;
 }
 
@@ -178,4 +161,4 @@
     font-size: 8px;
     max-width: 79px;
   }
-}
+}/*# sourceMappingURL=header_style.css.map */

@@ -51,7 +51,7 @@
   text-decoration: none;
 }
 .main-header .header-conteiner li a:hover, .main-header .header-conteiner li a:focus {
-  color: rgb(4, 230, 38);
+  color: rgb(2, 214, 234);
   text-decoration: none;
 }
 .main-header .header-conteiner a {
@@ -75,7 +75,7 @@
           align-items: center;
 }
 .main-header .header-conteiner a .btn-discuss:hover, .main-header .header-conteiner a .btn-discuss:focus {
-  color: rgb(4, 230, 38);
+  color: rgb(2, 214, 234);
   text-decoration: none;
 }
 

@@ -37,14 +37,14 @@
       padding-top: 2%;
 
       a {
-        color: $ligthgreen;
+        color: $lightblue;
         font-weight: 400;
         font-size: 20px;
         text-decoration: none;
 
         &:hover,
         &:focus {
-          color: $green;
+          color: $blue;
           text-decoration: none;
         }
       }
@@ -57,8 +57,8 @@
 
       .btn-discuss {
         border: none;
-        background-color: $ligthgreen;
-        color: $darkgreen;
+        background-color: $lightblue;
+        color: $darkblue;
         font-size: 22px;
         border-radius: 20px;
         width: 250px;
@@ -68,7 +68,7 @@
 
         &:hover,
         &:focus {
-          color: $green;
+          color: $blue;
           text-decoration: none;
         }
       }
