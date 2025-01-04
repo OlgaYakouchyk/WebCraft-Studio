@@ -1,6 +1,6 @@
 .modal-more-services {
   display: none;
-  background-color: #ebffeb;
+  background-color: rgba(191, 246, 202, 0.5490196078);
   border: 20px;
   position: fixed;
   top: 50%;
@@ -15,7 +15,7 @@
 }
 .modal-more-services .close-modal-more {
   font-size: 40px;
-  color: #181d18;
+  color: hsl(115, 100%, 15%);
   margin-left: 2%;
 }
 .modal-more-services .more-services-wrapper {
@@ -59,7 +59,7 @@
   display: block;
   width: 500px;
   height: 0.5px;
-  background-color: #181d18;
+  background-color: hsl(115, 100%, 15%);
   margin-bottom: 3%;
 }
 .modal-more-services .more-services-wrapper .more-top .more-section .section-left {
@@ -76,7 +76,7 @@
 }
 .modal-more-services .more-services-wrapper .more-top .more-section .section-left h1 {
   font-size: 22px;
-  color: #181d18;
+  color: hsl(115, 100%, 15%);
   margin-bottom: 10px;
 }
 .modal-more-services .more-services-wrapper .more-top .more-section .section-left p {
@@ -100,12 +100,12 @@
 }
 .modal-more-services .more-services-wrapper .more-top .more-section h3 {
   font-size: 17px;
-  color: #181d18;
+  color: hsl(115, 100%, 15%);
   text-align: end;
 }
 .modal-more-services .more-services-wrapper .more-top .more-section h2 {
   font-size: 17px;
-  color: #181d18;
+  color: hsl(115, 100%, 15%);
 }
 .modal-more-services .more-services-wrapper .more-buttom {
   margin: auto;
@@ -113,8 +113,8 @@
 }
 .modal-more-services .more-services-wrapper .more-buttom .btn-discuss {
   border: none;
-  background-color: #181d18;
-  color: #ebffeb;
+  background-color: hsl(115, 100%, 15%);
+  color: rgba(191, 246, 202, 0.5490196078);
   font-size: 22px;
   border-radius: 20px;
   margin-right: 25px;

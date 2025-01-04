@@ -9,7 +9,7 @@
 }
 
 .modal-reviews-main {
-  background-color: #ebffeb;
+  background-color: rgba(191, 246, 202, 0.5490196078);
   padding: 1%;
   position: fixed;
   top: 55%;
@@ -35,7 +35,7 @@
 }
 .modal-reviews-main .close-modal-reviews {
   font-size: 25px;
-  color: #181d18;
+  color: hsl(115, 100%, 15%);
   position: absolute;
   top: 10px;
   right: 20px;
@@ -54,7 +54,7 @@
       -ms-flex-align: start;
           align-items: flex-start;
   gap: 10px;
-  color: #798a8d;
+  color: white;
 }
 .modal-reviews-main .modal-content-reviews p:first-child {
   color: black;

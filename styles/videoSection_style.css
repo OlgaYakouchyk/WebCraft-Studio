@@ -3,17 +3,23 @@
   overflow: hidden;
   position: relative;
   width: 100%;
-  background-image: url("../img/render2.jpg");
+  background-image: url("../img/2e22c0e5-f610-4612-8775-8dac2e7b3689.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .main-paige .main-paige-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .main-paige .main-paige-wrapper h1 {
   margin: 10% 0 5% 10%;
+  background: -webkit-gradient(linear, left top, right top, from(#F7FFF6), to(#A7FFBD));
   background: linear-gradient(to right, #F7FFF6, #A7FFBD);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -22,6 +28,7 @@
 .main-paige .main-paige-wrapper h2 {
   font-size: 60px;
   margin: 0 auto;
+  background: -webkit-gradient(linear, left top, right top, from(#DBFFE0), to(#A0FF94));
   background: linear-gradient(to right, #DBFFE0, #A0FF94);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -32,7 +39,8 @@
   font-size: 48px;
   margin-left: 55%;
   margin-bottom: 5%;
+  background: -webkit-gradient(linear, left top, right top, from(#C1FFC9), to(#78FF37));
   background: linear-gradient(to right, #C1FFC9, #78FF37);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}/*# sourceMappingURL=videoSection_style.css.map */
+}

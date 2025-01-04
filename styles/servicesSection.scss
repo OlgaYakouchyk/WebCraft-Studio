@@ -6,14 +6,17 @@
 .section-services {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(to top, black,black, #01200a,#005d22);
+  background-image: url("../img/render1.jpg");
+  background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
 
   .srvice-top {
     font-size: $sectionFont-Sise;
     margin-top: 70px;
     margin-left: $sectionMargin-left;
     font-weight: $sectionFont-weight;
-    color: $ligthgreen;
+    color: $textcolor;
     margin-bottom: 100px;
   }
 
@@ -37,7 +40,7 @@
       border: 1px solid #242b2b;
 
       &:hover{
-        border: 1px solid $ligthgreen; 
+        border: 1px solid $textcolor; 
       }
 
       img {
@@ -47,13 +50,13 @@
 
       p {
         font-size: 35px;
-        color: $ligthgreen;
+        color: $textcolor;
         margin: 10px;
       }
     }
     p:nth-child(3){
         font-size: 23px;
-        color:#697977;
+        color:#bdccc3;
     }
   }
 
@@ -69,12 +72,12 @@
     .service-buttom2-h1{
         opacity: 0;
         font-size: 60px;
-        color: #697977;
+        color: #bdccc3;
         margin-top: 10%;
       
         &.fade-in {
             opacity: 1;
-            @include fade-in-text(4s, $ligthgreen);
+            @include fade-in-text(4s, $textcolor);
           }
 
     }
@@ -88,7 +91,7 @@
 
         &.fade-in {
             opacity: 1;
-            @include fade-in-text(8s, $ligthgreen);
+            @include fade-in-text(5s, $textcolor);
           }
     }
 
@@ -100,36 +103,19 @@
           opacity: 0;
           background-color: transparent !important;
           position: absolute;
-          bottom: 2%;
-          left: 66%;
-          max-width: 420px;
+          bottom: -2%;
+          left: 56%;
+          width: 500px;
     
 
           &.fade-in {
             opacity: 1;
-            @include fade-in(8s);
+            @include fade-in(6s);
           }
         }
     }
 
-    .button-robot2 {
-      background: transparent;
-      border: none;
 
-      img{
-        opacity: 0;
-        background-color: transparent !important;
-        position: absolute;
-        bottom: 29%;
-        left: 84%;
-        width: 200px;
-
-        &.fade-in {
-          opacity: 1;
-          @include fade-in(8s);
-        }
-      }
-  }
 
   }
   
@@ -139,7 +125,7 @@
     height: 80px;
     border: none;
     border-radius: 28px;
-    background-color: $ligthgreen;
+    background-color: $textcolor;
     color: #101616;
     font-size: 40px;
     font-weight: 600;

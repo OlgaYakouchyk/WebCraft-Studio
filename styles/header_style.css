@@ -2,14 +2,21 @@
   background-color: black;
   position: fixed;
   z-index: 1000;
-  box-shadow: 0 2px 4px rgba(56, 56, 55, 0.043);
+  -webkit-box-shadow: 0 2px 4px rgba(236, 247, 225, 0.043);
+          box-shadow: 0 2px 4px rgba(236, 247, 225, 0.043);
   max-width: 1920px;
   width: 100%;
 }
 .main-header .header-conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .main-header .header-conteiner .logo {
   margin-left: 3%;
@@ -20,9 +27,15 @@
 }
 .main-header .header-conteiner .ul-header {
   list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-left: 2%;
   gap: 15px;
 }
@@ -31,33 +44,32 @@
   padding-top: 2%;
 }
 .main-header .header-conteiner li a {
-  color: rgba(208, 241, 255, 0.5490196078);
+  color: white;
   font-weight: 400;
   font-size: 20px;
   text-decoration: none;
 }
 .main-header .header-conteiner li a:hover, .main-header .header-conteiner li a:focus {
-  color: rgb(2, 214, 234);
+  color: rgb(2, 234, 29);
   text-decoration: none;
 }
 .main-header .header-conteiner a {
   display: block;
   margin-right: 3%;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .main-header .header-conteiner a .btn-discuss {
-  border: none;
-  background-color: rgba(208, 241, 255, 0.5490196078);
-  color: #012854;
-  font-size: 22px;
-  border-radius: 20px;
-  width: 250px;
-  font-weight: 600;
-  height: 50px;
-  align-items: center;
+  color: white;
+  font-size: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
 }
 .main-header .header-conteiner a .btn-discuss:hover, .main-header .header-conteiner a .btn-discuss:focus {
-  color: rgb(2, 214, 234);
+  color: rgb(2, 234, 29);
   text-decoration: none;
 }
 
@@ -161,4 +173,4 @@
     font-size: 8px;
     max-width: 79px;
   }
-}/*# sourceMappingURL=header_style.css.map */
+}

@@ -6,15 +6,17 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(black), color-stop(#01200a), to(#005d22));
-  background: linear-gradient(to top, black, black, #01200a, #005d22);
+  background-image: url("../img/render1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
 }
 .section-services .srvice-top {
   font-size: 40px;
   margin-top: 70px;
   margin-left: 42px;
   font-weight: 400;
-  color: #ebffeb;
+  color: white;
   margin-bottom: 100px;
 }
 .section-services .service-buttom {
@@ -51,7 +53,7 @@
   border: 1px solid #242b2b;
 }
 .section-services .service-buttom .sevrice-box:hover {
-  border: 1px solid #ebffeb;
+  border: 1px solid white;
 }
 .section-services .service-buttom .sevrice-box img {
   width: 250px;
@@ -59,12 +61,12 @@
 }
 .section-services .service-buttom .sevrice-box p {
   font-size: 35px;
-  color: #ebffeb;
+  color: white;
   margin: 10px;
 }
 .section-services .service-buttom p:nth-child(3) {
   font-size: 23px;
-  color: #697977;
+  color: #bdccc3;
 }
 .section-services .service-buttom2 {
   display: -webkit-box;
@@ -84,14 +86,14 @@
 .section-services .service-buttom2 .service-buttom2-h1 {
   opacity: 0;
   font-size: 60px;
-  color: #697977;
+  color: #bdccc3;
   margin-top: 10%;
 }
 .section-services .service-buttom2 .service-buttom2-h1.fade-in {
   opacity: 1;
   -webkit-animation: fadeIn 4s ease-in-out;
           animation: fadeIn 4s ease-in-out;
-  color: #ebffeb;
+  color: white;
 }
 @-webkit-keyframes fadeIn {
   from {
@@ -118,9 +120,9 @@
 }
 .section-services .service-buttom2 .service-buttom2-h1-bottom.fade-in {
   opacity: 1;
-  -webkit-animation: fadeIn 8s ease-in-out;
-          animation: fadeIn 8s ease-in-out;
-  color: #ebffeb;
+  -webkit-animation: fadeIn 5s ease-in-out;
+          animation: fadeIn 5s ease-in-out;
+  color: white;
 }
 @keyframes fadeIn {
   from {
@@ -138,39 +140,14 @@
   opacity: 0;
   background-color: transparent !important;
   position: absolute;
-  bottom: 2%;
-  left: 66%;
-  max-width: 420px;
+  bottom: -2%;
+  left: 56%;
+  width: 500px;
 }
 .section-services .service-buttom2 .button-robot img.fade-in {
   opacity: 1;
-  -webkit-animation: fadeIn 8s ease-in-out;
-          animation: fadeIn 8s ease-in-out;
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.section-services .service-buttom2 .button-robot2 {
-  background: transparent;
-  border: none;
-}
-.section-services .service-buttom2 .button-robot2 img {
-  opacity: 0;
-  background-color: transparent !important;
-  position: absolute;
-  bottom: 29%;
-  left: 84%;
-  width: 200px;
-}
-.section-services .service-buttom2 .button-robot2 img.fade-in {
-  opacity: 1;
-  -webkit-animation: fadeIn 8s ease-in-out;
-          animation: fadeIn 8s ease-in-out;
+  -webkit-animation: fadeIn 6s ease-in-out;
+          animation: fadeIn 6s ease-in-out;
 }
 @keyframes fadeIn {
   from {
@@ -186,7 +163,7 @@
   height: 80px;
   border: none;
   border-radius: 28px;
-  background-color: #ebffeb;
+  background-color: white;
   color: #101616;
   font-size: 40px;
   font-weight: 600;

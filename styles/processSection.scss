@@ -4,7 +4,7 @@
 
 .section3-process {
   display: flex;
-  background: linear-gradient(to bottom, black,#01200a,#005d22);
+  background-color: black;
   flex-direction: column;
   
 }
@@ -19,7 +19,7 @@
     margin-top: $sectionMargin-top;
     margin-left: $sectionMargin-left;
     font-weight: $sectionFont-weight;
-    color: $ligthgreen;
+    color: $textcolor;
   }
 
   .process-buttom {
@@ -98,13 +98,13 @@
 
     .prev i,
     .next i {
-      color: $darkgreen;
+      color: $textcolor;
       font-size: 60px;
     }
 
     .prev:hover i,
     .next:hover i {
-      color: $ligthgreen; /* Изменение цвета при наведении */
+      color: $green; /* Изменение цвета при наведении */
     }
   }
 }
@@ -124,8 +124,8 @@
     align-items: center;
     background-color: #101616;
     border-radius: 20px;
-    width: 400px;
-    height: 400px;
+    width: 336px;
+    height: 385px;
     flex-shrink: 0;
     margin: 0 10px;
     text-align: center;
@@ -136,7 +136,7 @@
     h4 {
       font-size: 33px;
       font-weight: 400;
-      color: $ligthgreen;
+      color: $textcolor;
       padding: 20px 0;
     }
     p {
@@ -151,14 +151,10 @@
 
 .btn-discuss {
   border: none;
-  background-color: $ligthgreen;
-  color: $darkgreen;
-  font-size: 22px;
-  border-radius: 20px;
-  margin-right: 25px;
-  width: 250px;
+  background-color: transparent;
+  color: $textcolor;
+  font-size: 25px;
   font-weight: 600;
-  height: 50px;
   padding: 8px;
   margin-top: 8px;
 }

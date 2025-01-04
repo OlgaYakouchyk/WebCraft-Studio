@@ -9,8 +9,8 @@ for (let block of carousel.querySelectorAll(".block")) {
 }
 
 /* конфигурация */
-let width = 450; // ширина картинки
-let count = 4; // видимое количество изображений
+let width = 336; // ширина картинки
+let count = 1; // видимое количество изображений
 
 let list = carousel;
 let listElems = carousel.querySelectorAll(".block");
@@ -32,13 +32,20 @@ if (prevButton && nextButton) {
   nextButton.onclick = function () {
     // сдвиг вправо
     position -= width * count;
+    if (position < -width * (listElems.length - count)) {
+      position = 0;
+    }
+
     // последнее передвижение вправо может быть не на 3, а на 2 или 1 элемент
-    position = Math.max(position, -width * (listElems.length - count));
+    // position = Math.max(position, -width * (listElems.length - count));
     list.style.marginLeft = position + "px";
   };
 } else {
   console.error("Button navigetion do not exist");
 }
+
+
+
 
 document.addEventListener("DOMContentLoaded", function () {
   const fadeMainTaxt = document.querySelectorAll(".main-text");

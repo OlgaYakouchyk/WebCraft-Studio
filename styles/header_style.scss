@@ -4,7 +4,7 @@
   background-color: black;
   position: fixed;
   z-index: 1000;
-  box-shadow: 0 2px 4px rgba(56, 56, 55, 0.043);
+  box-shadow: 0 2px 4px rgba(236, 247, 225, 0.043);
   max-width: 1920px;
   width: 100%;
 
@@ -37,14 +37,14 @@
       padding-top: 2%;
 
       a {
-        color: $lightblue;
+        color: $textcolor;
         font-weight: 400;
         font-size: 20px;
         text-decoration: none;
 
         &:hover,
         &:focus {
-          color: $blue;
+          color: $green;
           text-decoration: none;
         }
       }
@@ -56,19 +56,14 @@
       align-items: center;
 
       .btn-discuss {
-        border: none;
-        background-color: $lightblue;
-        color: $darkblue;
-        font-size: 22px;
-        border-radius: 20px;
-        width: 250px;
-        font-weight: 600;
-        height: 50px;
+        color: $textcolor;
+        font-size: 25px;
         align-items: center;
+        background-color: transparent;
 
         &:hover,
         &:focus {
-          color: $blue;
+          color: $green;
           text-decoration: none;
         }
       }
