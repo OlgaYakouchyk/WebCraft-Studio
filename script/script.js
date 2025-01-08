@@ -1,48 +1,80 @@
 //КАрусель PROCESS
 
-let carousel = document.querySelector(".block-carusel");
 
-let i = 1;
-for (let block of carousel.querySelectorAll(".block")) {
-  block.style.position = "relative";
-  i++;
-}
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 4, // Количество видимых слайдов
+  slidesPerGroup: 1, // Прокрутка по 1
+  spaceBetween: 20, // Расстояние между слайдами
+  loop: true, // Зацикливание
+  loopFillGroupWithBlank: true, // Заполняет пустые места
+  navigation: {
+    nextEl: '.swiper-button-next', // Кнопка "вперед"
+    prevEl: '.swiper-button-prev', // Кнопка "назад"
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 1, // На мобильных показывать 1 элемент
+    },
+    1024: {
+      slidesPerView: 2, // На планшетах показывать 2 элемента
+    },
+    1440: {
+      slidesPerView: 4, // На десктопах показывать 4 элемента
+    },
+  },
+  pagination: {
+    el: '.swiper-pagination', // Пагинация
+    clickable: true, // Возможность клика по пагинации
+  },
+});
 
-/* конфигурация */
-let width = 336; // ширина картинки
-let count = 1; // видимое количество изображений
+console.log(swiper.slides);
 
-let list = carousel;
-let listElems = carousel.querySelectorAll(".block");
 
-let position = 0; // положение ленты прокрутки
 
-const prevButton = document.querySelector(".prev");
-const nextButton = document.querySelector(".next");
+// let carousel = document.querySelector(".block-carusel");
 
-if (prevButton && nextButton) {
-  prevButton.onclick = function () {
-    // сдвиг влево
-    position += width * count;
-    // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
-    position = Math.min(position, 0);
-    list.style.marginLeft = position + "px";
-  };
+// let i = 1;
+// for (let block of carousel.querySelectorAll(".block")) {
+//   block.style.position = "relative";
+//   i++;
+// }
 
-  nextButton.onclick = function () {
-    // сдвиг вправо
-    position -= width * count;
-    if (position < -width * (listElems.length - count)) {
-      position = 0;
-    }
+// /* конфигурация */
+// let width = 336; // ширина картинки
+// let count = 1; // видимое количество изображений
 
-    // последнее передвижение вправо может быть не на 3, а на 2 или 1 элемент
-    // position = Math.max(position, -width * (listElems.length - count));
-    list.style.marginLeft = position + "px";
-  };
-} else {
-  console.error("Button navigetion do not exist");
-}
+// let list = carousel;
+// let listElems = carousel.querySelectorAll(".block");
+
+// let position = 0; // положение ленты прокрутки
+
+// const prevButton = document.querySelector(".prev");
+// const nextButton = document.querySelector(".next");
+
+// if (prevButton && nextButton) {
+//   prevButton.onclick = function () {
+//     // сдвиг влево
+//     position += width * count;
+//     // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
+//     position = Math.min(position, 0);
+//     list.style.marginLeft = position + "px";
+//   };
+
+//   nextButton.onclick = function () {
+//     // сдвиг вправо
+//     position -= width * count;
+//     if (position < -width * (listElems.length - count)) {
+//       position = 0;
+//     }
+
+//     // последнее передвижение вправо может быть не на 3, а на 2 или 1 элемент
+//     // position = Math.max(position, -width * (listElems.length - count));
+//     list.style.marginLeft = position + "px";
+//   };
+// } else {
+//   console.error("Button navigetion do not exist");
+// }
 
 
 
@@ -106,7 +138,7 @@ document.addEventListener("DOMContentLoaded", function () {
 let carousel2 = document.querySelector(".block-carusel2");
 
 let b = 1;
-for (let block2 of carousel.querySelectorAll(".block-review")) {
+for (let block2 of carousel2.querySelectorAll(".block-review")) {
   block2.style.position = "relative";
   b++;
 }

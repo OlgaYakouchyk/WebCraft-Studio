@@ -15,7 +15,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./styles/style.css?v=1.0" />
+    
+
 
     <title>
       WebCraft Studio - Web Development and Digital Marketing Services
@@ -91,65 +95,73 @@
         </div>
 
         <!-- BLOCK KARUSEL -->
-        <div class="block-carusel">
-          <div class="block">
-            <h4>// Introduction</h4>
-            <p>We will have a call to discuss the task.</p>
-            <p>
-              You will describe the project and the goal you want to achieve
-              with the help of the website, and I will ask clarifying questions.
-            </p>
-            <a href="http://t.me/OlgaYakouchyk" target="_blank"
-              ><button class="btn-discuss">Discuss the project</button></a
-            >
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <h4>// Introduction</h4>
+              <p>We will have a call to discuss the task.</p>
+              <p>
+                You will describe the project and the goal you want to achieve
+                with the help of the website, and I will ask clarifying questions.
+              </p>
+              <a href="http://t.me/OlgaYakouchyk" target="_blank"
+                ><button class="btn-discuss">Discuss the project</button></a
+              >
+            </div>
+            <div class="swiper-slide">
+              <h4>// Commercial Offer</h4>
+              <p>
+                After the introduction, I will prepare a commercial offer, where I
+                will describe the website structure, the stages of work, and
+                propose cooperation options.
+              </p>
+              <p>≈1-2 hours</p>
+            </div>
+            <div class="swiper-slide">
+              <h4>// Briefing</h4>
+              <p>
+                We will have a call, determine the website style and references. I
+                will gather key information about the project needed for website
+                development.
+              </p>
+              <p>≈1-2 hours</p>
+            </div>
+           
+            <div class="swiper-slide">
+              <h4>// Design Concept</h4>
+              <p>
+                Based on the marketing analysis and references you provide, I
+                develop the design concept for the website. We will approve it,
+                and I will design all the pages.
+              </p>
+              <p>≈7-14 working days</p>
+            </div>
+            <div class="swiper-slide">
+              <h4>// Adaptive Layout</h4>
+              <p>
+                I create the website depend on your preference (HTML, scss,
+                javascript or WordPress) , adapt it for different devices, add
+                animations, set up forms, domain, payment systems, basic SEO, and
+                more.
+              </p>
+              <p>≈7-14 working days</p>
+            </div>
+            <div class="swiper-slide">
+              <h4>// Bonuses</h4>
+              <p>1-2 weeks of website support for free.</p>
+              <p>Instruction for managing the website.</p>
+              <a href="http://t.me/OlgaYakouchyk" target="_blank"
+                ><button class="btn-discuss">Discuss the project</button></a
+              >
+            </div>
           </div>
-          <div class="block">
-            <h4>// Commercial Offer</h4>
-            <p>
-              After the introduction, I will prepare a commercial offer, where I
-              will describe the website structure, the stages of work, and
-              propose cooperation options.
-            </p>
-            <p>≈1-2 hours</p>
-          </div>
-          <div class="block">
-            <h4>// Briefing</h4>
-            <p>
-              We will have a call, determine the website style and references. I
-              will gather key information about the project needed for website
-              development.
-            </p>
-            <p>≈1-2 hours</p>
-          </div>
-         
-          <div class="block">
-            <h4>// Design Concept</h4>
-            <p>
-              Based on the marketing analysis and references you provide, I
-              develop the design concept for the website. We will approve it,
-              and I will design all the pages.
-            </p>
-            <p>≈7-14 working days</p>
-          </div>
-          <div class="block">
-            <h4>// Adaptive Layout</h4>
-            <p>
-              I create the website depend on your preference (HTML, scss,
-              javascript or WordPress) , adapt it for different devices, add
-              animations, set up forms, domain, payment systems, basic SEO, and
-              more.
-            </p>
-            <p>≈7-14 working days</p>
-          </div>
-          <div class="block">
-            <h4>// Bonuses</h4>
-            <p>1-2 weeks of website support for free.</p>
-            <p>Instruction for managing the website.</p>
-            <a href="http://t.me/OlgaYakouchyk" target="_blank"
-              ><button class="btn-discuss">Discuss the project</button></a
-            >
-          </div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <div class="swiper-pagination"></div>
         </div>
+
       </section>
 
       <!-- *** SECTION SERVICES *** -->
@@ -240,10 +252,7 @@
           <button class="button-robot">
             <img src="./img/serviceSection/robot_new.png" alt="robot" />
           </button>
-          <!-- <button class="button-robot2">
-            <img src="./img/serviceSection/ready-qestion.png" alt="" />
-          </button> -->
-
+          
           <div class="modal-window-answer">
             <div class="modal-wrapper">
               <span class="close-modal" id="closeModal">&times;</span>
@@ -750,6 +759,8 @@
       </nav>
     </footer>
 
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
@@ -757,5 +768,6 @@
     <script src="./script/script.js"></script>
     <script src="./script/scriptForm.js"></script>
     <script src="./script/scriptModal.js"></script>
+   
   </body>
 </html>

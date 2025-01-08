@@ -108,8 +108,13 @@
     }
   }
 }
-
-.block-carusel {
+.swiper {
+  width: 100%; /* Установите ширину контейнера */
+  overflow: hidden; /* Скрывает содержимое за пределами */
+}
+.swiper-wrapper {
+  display: flex;
+  transition: transform 0.3s ease; /* Плавное перемещение */
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -118,7 +123,9 @@
   transition: margin-left 0.5s;
   padding-right: 2%;
 
-  .block {
+  .swiper-slide {
+    flex: 0 0 25%; /* 4 элемента на экране: 100% / 4 = 25% */
+    box-sizing: border-box; /* Чтобы отступы не ломали макет */
     display: flex;
     flex-direction: column;
     align-items: center;

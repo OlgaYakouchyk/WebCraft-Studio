@@ -336,10 +336,20 @@
   color: rgb(2, 234, 29); /* Изменение цвета при наведении */
 }
 
-.block-carusel {
-  position: relative;
+.swiper {
+  width: 100%; /* Установите ширину контейнера */
+  overflow: hidden; /* Скрывает содержимое за пределами */
+}
+
+.swiper-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease; /* Плавное перемещение */
+  position: relative;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -352,7 +362,12 @@
   transition: margin-left 0.5s;
   padding-right: 2%;
 }
-.block-carusel .block {
+.swiper-wrapper .swiper-slide {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%; /* 4 элемента на экране: 100% / 4 = 25% */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; /* Чтобы отступы не ломали макет */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -371,18 +386,17 @@
       flex-shrink: 0;
   margin: 0 10px;
   text-align: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0 20px;
   margin-bottom: 10px;
 }
-.block-carusel .block h4 {
+.swiper-wrapper .swiper-slide h4 {
   font-size: 33px;
   font-weight: 400;
   color: white;
   padding: 20px 0;
 }
-.block-carusel .block p {
+.swiper-wrapper .swiper-slide p {
   font-size: 20px;
   font-weight: 300;
   color: #93a5a3;
