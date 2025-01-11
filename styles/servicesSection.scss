@@ -6,10 +6,10 @@
 .section-services {
   display: flex;
   flex-direction: column;
-  background-image: url("../img/render1.jpg");
+  background-image: url("../img/render89.png");
   background-repeat: no-repeat;
     background-position: center;
-    background-size: auto;
+    background-size: cover;
 
   .srvice-top {
     font-size: $sectionFont-Sise;
@@ -77,7 +77,7 @@
       
         &.fade-in {
             opacity: 1;
-            @include fade-in-text(4s, $textcolor);
+            @include fade-in-text(3s, $textcolor);
           }
 
     }
@@ -91,7 +91,7 @@
 
         &.fade-in {
             opacity: 1;
-            @include fade-in-text(5s, $textcolor);
+            @include fade-in-text(3s, $textcolor);
           }
     }
 
@@ -110,7 +110,7 @@
 
           &.fade-in {
             opacity: 1;
-            @include fade-in(6s);
+            @include fade-in(3s);
           }
         }
     }

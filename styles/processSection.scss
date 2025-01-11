@@ -68,7 +68,7 @@
         opacity: 0;
         font-size: 34px;
         line-height: 42px;
-        margin-bottom: 60px;
+        margin-bottom: 15px;
         font-weight: 400;
 
         &.fade-in {
@@ -84,7 +84,6 @@
     justify-content: space-between;
     align-items: center;
     margin-left: 100px;
-    margin-bottom: 30px;
     gap: 50px;
 
     .prev,
@@ -99,7 +98,7 @@
     .prev i,
     .next i {
       color: $textcolor;
-      font-size: 60px;
+      font-size: 50px;
     }
 
     .prev:hover i,
@@ -108,37 +107,29 @@
     }
   }
 }
-.swiper {
-  width: 100%; /* Установите ширину контейнера */
-  overflow: hidden; /* Скрывает содержимое за пределами */
-}
-.swiper-wrapper {
-  display: flex;
-  transition: transform 0.3s ease; /* Плавное перемещение */
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  overflow: hidden;
-  transition: margin-left 0.5s;
-  padding-right: 2%;
 
-  .swiper-slide {
-    flex: 0 0 25%; /* 4 элемента на экране: 100% / 4 = 25% */
-    box-sizing: border-box; /* Чтобы отступы не ломали макет */
+.scroll-conteiner{
+  display: flex; /* Горизонтальное расположение карточек */
+  gap: 20px; /* Расстояние между карточками */
+  overflow-x: auto; /* Включить горизонтальный скролл */
+  padding: 20px; /* Отступы внутри контейнера */
+  scroll-snap-type: x mandatory; /* Фиксация скролла на карточках */
+
+  .card {
+    flex: 0 0 300px; /* Фиксированная ширина карточки */
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #101616;
     border-radius: 20px;
     width: 336px;
-    height: 385px;
-    flex-shrink: 0;
     margin: 0 10px;
     text-align: center;
     box-sizing: border-box;
     padding: 0 20px;
     margin-bottom: 10px;
+    scroll-snap-align: center; /* Фиксация карточки в центре экрана при скролле */
+    text-align: center;
 
     h4 {
       font-size: 33px;
@@ -196,16 +187,6 @@
         font-size: 55px;
       }
     }
-    .block-carusel .block {
-      width: 370px;
-      height: 350px;
-      h4 {
-        font-size: 28px;
-      }
-      .btn-discuss {
-        margin-top: -10px;
-      }
-    }
   }
 }
 
@@ -237,20 +218,10 @@
         font-size: 45px;
       }
     }
-    .block-carusel .block {
-      width: 343px;
-
-      h4 {
-        font-size: 28px;
-      }
-      .btn-discuss {
-        margin-top: -10px;
-      }
-    }
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .section3-process {
     .block-top {
       .process-top {
@@ -290,23 +261,9 @@
         }
       }
     }
-    .block-carusel .block {
-      width: 315px;
-      height: 322px;
-      h4 {
-        font-size: 25px;
-      }
-      p {
-        font-size: 15px;
-        line-height: 20px;
-      }
-      .btn-discuss {
-        margin-top: -5px;
-        margin-left: 5%;
-        width: 230px;
-        height: 45px;
-      }
-    }
+    .card {
+      flex: 0 0 90%; /* На мобильных карточки будут занимать 90% ширины экрана */
+  }
   }
 }
 
@@ -359,26 +316,7 @@
         }
       }
     }
-    .block-carusel .block {
-      width: 260px;
-      height: 170px;
-      h4 {
-        font-size: 15px;
-        padding: 7px;
-      }
-      p {
-        font-size: 10px;
-        line-height: 10px;
-        padding: 7px;
-      }
-      .btn-discuss {
-        margin-top: 5px;
-        margin-left: 5%;
-        width: 150px;
-        font-size: 14px;
-        height: 34px;
-      }
-    }
+
   }
 }
 
@@ -425,26 +363,9 @@
         }
       }
     }
-    .block-carusel .block {
-      width: 260px;
-      height: 170px;
-      h4 {
-        font-size: 15px;
-        padding: 7px;
-      }
-      p {
-        font-size: 10px;
-        line-height: 10px;
-        padding: 7px;
-      }
-      .btn-discuss {
-        margin-top: 5px;
-        margin-left: 5%;
-        width: 150px;
-        font-size: 14px;
-        height: 34px;
-      }
-    }
+    .card {
+      flex: 0 0 90%; /* На мобильных карточки будут занимать 90% ширины экрана */
+  }
   }
 }
 

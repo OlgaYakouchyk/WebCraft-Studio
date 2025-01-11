@@ -11,7 +11,7 @@
 
 .modal-what-in-price {
   display: none;
-  background-color: rgba(191, 246, 202, 0.5490196078);
+  background-color: rgb(189, 204, 189);
   padding: 1%;
   position: fixed;
   top: 55%;
@@ -40,7 +40,7 @@
 }
 .modal-what-in-price .close-modal-include {
   font-size: 20px;
-  color: hsl(115, 100%, 15%);
+  color: black;
   position: absolute;
   top: 10px;
   right: 20px;
@@ -84,27 +84,27 @@
   display: block;
   width: 500px;
   height: 0.5px;
-  background-color: #d1ddd1;
+  background-color: black;
   margin-top: 1%;
 }
 .modal-what-in-price .modal-conteiner .block h2 {
   font-size: 20px;
-  color: white;
+  color: black;
 }
 .modal-what-in-price .modal-conteiner .block h4 {
   font-size: 16px;
-  color: white;
+  color: black;
 }
 .modal-what-in-price .modal-conteiner .block p {
   font-size: 13px;
-  color: white;
+  color: black;
 }
 .modal-what-in-price .modal-conteiner button {
-  color: rgba(191, 246, 202, 0.5490196078);
+  color: white;
   border: none;
   font-size: 20px;
   font-weight: 700;
-  background-color: rgb(54, 99, 93);
+  background-color: black;
   margin-top: 7%;
   margin-bottom: 4%;
   width: 250px;

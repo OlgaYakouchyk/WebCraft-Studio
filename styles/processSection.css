@@ -287,7 +287,7 @@
   opacity: 0;
   font-size: 34px;
   line-height: 42px;
-  margin-bottom: 60px;
+  margin-bottom: 15px;
   font-weight: 400;
 }
 .block-top .process-buttom .process-buttom-buttom .text-h4.fade-in {
@@ -315,7 +315,6 @@
       -ms-flex-align: center;
           align-items: center;
   margin-left: 100px;
-  margin-bottom: 30px;
   gap: 50px;
 }
 .block-top .arrows .prev,
@@ -329,45 +328,27 @@
 .block-top .arrows .prev i,
 .block-top .arrows .next i {
   color: white;
-  font-size: 60px;
+  font-size: 50px;
 }
 .block-top .arrows .prev:hover i,
 .block-top .arrows .next:hover i {
   color: rgb(2, 234, 29); /* Изменение цвета при наведении */
 }
 
-.swiper {
-  width: 100%; /* Установите ширину контейнера */
-  overflow: hidden; /* Скрывает содержимое за пределами */
-}
-
-.swiper-wrapper {
+.scroll-conteiner {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease; /* Плавное перемещение */
-  position: relative;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  overflow: hidden;
-  -webkit-transition: margin-left 0.5s;
-  transition: margin-left 0.5s;
-  padding-right: 2%;
+  display: flex; /* Горизонтальное расположение карточек */
+  gap: 20px; /* Расстояние между карточками */
+  overflow-x: auto; /* Включить горизонтальный скролл */
+  padding: 20px; /* Отступы внутри контейнера */
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory; /* Фиксация скролла на карточках */
 }
-.swiper-wrapper .swiper-slide {
+.scroll-conteiner .card {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 25%;
-          flex: 0 0 25%; /* 4 элемента на экране: 100% / 4 = 25% */
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; /* Чтобы отступы не ломали макет */
+      -ms-flex: 0 0 300px;
+          flex: 0 0 300px; /* Фиксированная ширина карточки */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -381,22 +362,22 @@
   background-color: #101616;
   border-radius: 20px;
   width: 336px;
-  height: 385px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
   margin: 0 10px;
   text-align: center;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0 20px;
   margin-bottom: 10px;
+  scroll-snap-align: center; /* Фиксация карточки в центре экрана при скролле */
+  text-align: center;
 }
-.swiper-wrapper .swiper-slide h4 {
+.scroll-conteiner .card h4 {
   font-size: 33px;
   font-weight: 400;
   color: white;
   padding: 20px 0;
 }
-.swiper-wrapper .swiper-slide p {
+.scroll-conteiner .card p {
   font-size: 20px;
   font-weight: 300;
   color: #93a5a3;
@@ -437,16 +418,6 @@
   .section3-process .block-top .arrows .next i {
     font-size: 55px;
   }
-  .section3-process .block-carusel .block {
-    width: 370px;
-    height: 350px;
-  }
-  .section3-process .block-carusel .block h4 {
-    font-size: 28px;
-  }
-  .section3-process .block-carusel .block .btn-discuss {
-    margin-top: -10px;
-  }
 }
 @media (max-width: 1024px) {
   .section3-process .block-top .process-buttom .main-text {
@@ -469,17 +440,8 @@
   .section3-process .block-top .arrows .next i {
     font-size: 45px;
   }
-  .section3-process .block-carusel .block {
-    width: 343px;
-  }
-  .section3-process .block-carusel .block h4 {
-    font-size: 28px;
-  }
-  .section3-process .block-carusel .block .btn-discuss {
-    margin-top: -10px;
-  }
 }
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .section3-process .block-top .process-top {
     font-size: 30px;
   }
@@ -513,22 +475,10 @@
   .section3-process .block-top .arrows .next i {
     font-size: 40px;
   }
-  .section3-process .block-carusel .block {
-    width: 315px;
-    height: 322px;
-  }
-  .section3-process .block-carusel .block h4 {
-    font-size: 25px;
-  }
-  .section3-process .block-carusel .block p {
-    font-size: 15px;
-    line-height: 20px;
-  }
-  .section3-process .block-carusel .block .btn-discuss {
-    margin-top: -5px;
-    margin-left: 5%;
-    width: 230px;
-    height: 45px;
+  .section3-process .card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 90%;
+            flex: 0 0 90%; /* На мобильных карточки будут занимать 90% ширины экрана */
   }
 }
 @media (max-width: 460px) {
@@ -578,26 +528,6 @@
   .section3-process .block-top .arrows .next i {
     font-size: 25px;
   }
-  .section3-process .block-carusel .block {
-    width: 260px;
-    height: 170px;
-  }
-  .section3-process .block-carusel .block h4 {
-    font-size: 15px;
-    padding: 7px;
-  }
-  .section3-process .block-carusel .block p {
-    font-size: 10px;
-    line-height: 10px;
-    padding: 7px;
-  }
-  .section3-process .block-carusel .block .btn-discuss {
-    margin-top: 5px;
-    margin-left: 5%;
-    width: 150px;
-    font-size: 14px;
-    height: 34px;
-  }
 }
 @media (max-width: 420px) {
   .section3-process {
@@ -639,24 +569,9 @@
   .section3-process .block-top .arrows .next i {
     font-size: 25px;
   }
-  .section3-process .block-carusel .block {
-    width: 260px;
-    height: 170px;
-  }
-  .section3-process .block-carusel .block h4 {
-    font-size: 15px;
-    padding: 7px;
-  }
-  .section3-process .block-carusel .block p {
-    font-size: 10px;
-    line-height: 10px;
-    padding: 7px;
-  }
-  .section3-process .block-carusel .block .btn-discuss {
-    margin-top: 5px;
-    margin-left: 5%;
-    width: 150px;
-    font-size: 14px;
-    height: 34px;
+  .section3-process .card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 90%;
+            flex: 0 0 90%; /* На мобильных карточки будут занимать 90% ширины экрана */
   }
 }

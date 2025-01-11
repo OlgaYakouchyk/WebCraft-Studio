@@ -6,10 +6,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: url("../img/render1.jpg");
+  background-image: url("../img/render89.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto;
+  background-size: cover;
 }
 .section-services .srvice-top {
   font-size: 40px;
@@ -91,8 +91,8 @@
 }
 .section-services .service-buttom2 .service-buttom2-h1.fade-in {
   opacity: 1;
-  -webkit-animation: fadeIn 4s ease-in-out;
-          animation: fadeIn 4s ease-in-out;
+  -webkit-animation: fadeIn 3s ease-in-out;
+          animation: fadeIn 3s ease-in-out;
   color: white;
 }
 @-webkit-keyframes fadeIn {
@@ -120,8 +120,8 @@
 }
 .section-services .service-buttom2 .service-buttom2-h1-bottom.fade-in {
   opacity: 1;
-  -webkit-animation: fadeIn 5s ease-in-out;
-          animation: fadeIn 5s ease-in-out;
+  -webkit-animation: fadeIn 3s ease-in-out;
+          animation: fadeIn 3s ease-in-out;
   color: white;
 }
 @keyframes fadeIn {
@@ -146,8 +146,8 @@
 }
 .section-services .service-buttom2 .button-robot img.fade-in {
   opacity: 1;
-  -webkit-animation: fadeIn 6s ease-in-out;
-          animation: fadeIn 6s ease-in-out;
+  -webkit-animation: fadeIn 3s ease-in-out;
+          animation: fadeIn 3s ease-in-out;
 }
 @keyframes fadeIn {
   from {

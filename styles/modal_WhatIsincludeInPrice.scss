@@ -13,7 +13,7 @@
 
 .modal-what-in-price {
   display: none;
-  background-color: $ligthgreen;
+  background-color: rgb(189 204 189);
   padding: 1%;
   position: fixed;
   top: 55%;
@@ -32,7 +32,7 @@
 
   .close-modal-include {
     font-size: 20px;
-    color: $darkgreen;
+    color: black;
     position: absolute;
     top: 10px;
     right: 20px;
@@ -60,34 +60,34 @@ gap: 6px;
   display: block;
   width: 500px;
   height: 0.5px;
-  background-color: #d1ddd1;
+  background-color: black;
   margin-top: 1%;
 }
 
 
   h2{
     font-size: 20px;
-    color: $textcolor;
+    color: black;
     
 
   }
   h4{
     font-size: 16px;
-    color: $textcolor;
+    color: black;
   }
   p{
     font-size: 13px;
-    color: $textcolor;
+    color: black;
   }
 
 }
 
 button{
-  color: $ligthgreen;
+  color: $textcolor;
   border: none;
   font-size: 20px;
   font-weight: 700;
-  background-color: rgb(54 99 93);
+  background-color: black;
   margin-top: 7%;
   margin-bottom: 4%;
   width: 250px;

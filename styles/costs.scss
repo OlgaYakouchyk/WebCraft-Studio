@@ -18,7 +18,7 @@
     margin-top: 70px;
     margin-left: $sectionMargin-left;
     font-weight: $sectionFont-weight;
-    color: $ligthgreen;
+    color: $textcolor;
     margin-bottom: 60px;
   }
 
@@ -54,7 +54,7 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-between;
-        color: $ligthgreen;
+        color: $textcolor;
         width: 80%;
         gap: 15px;
         text-align: start;
@@ -78,11 +78,11 @@
 
           h2 {
             font-size: 30px;
-            color: $ligthgreen;
+            color: $textcolor;
           }
 
           p {
-            color: $ligthgreen;
+            color: $textcolor;
             font-size: 15px;
           }
         }
@@ -106,7 +106,7 @@
 
           .btn-discuss {
             background-color: transparent;
-            color: $ligthgreen;
+            color: $textcolor;
             font-size: 25px;
           }
 
@@ -117,8 +117,7 @@
               text-decoration: underline;
               color: rgb(115 120 119);font-size: 22px;
               text-decoration: underline;
-              color: rgb(115 120 119);
-  
+             
             }
           
         }
@@ -143,8 +142,8 @@
 
   .floating-label {
     position: absolute;
-    background-color: $ligthgreen;
-    color: $darkgreen;
+    background-color: $textcolor;
+    color: black;
     padding: 10px;
     border-radius: 20px;
     font-size: 18px;
@@ -152,7 +151,7 @@
     text-align: center;
     display: inline-block;
     transform: translate(-50%, -50%);
-    box-shadow: 0px 2px 11px $green;
+    box-shadow: 0px 2px 11px rgb(11, 189, 11);
 
     // Используем миксин для добавления анимации
 
@@ -166,7 +165,7 @@
     i {
       margin-right: 10px;
       font-size: 20px;
-      color: $darkgreen;
+      color: black;
     }
   }
   .label2 {
@@ -175,7 +174,7 @@
     i {
       margin-right: 10px;
       font-size: 20px;
-      color: $darkgreen;
+      color: black;
     }
   }
   .label3 {
@@ -184,7 +183,7 @@
     i {
       margin-right: 10px;
       font-size: 20px;
-      color: $darkgreen;
+      color: black;
     }
   }
   .label4 {
@@ -193,7 +192,7 @@
     i {
       margin-right: 10px;
       font-size: 20px;
-      color: $darkgreen;
+      color: black;
     }
   }
   .label5 {
@@ -202,7 +201,7 @@
     i {
       margin-right: 10px;
       font-size: 20px;
-      color: $darkgreen;
+      color: black;
     }
   }
   .label6 {
@@ -211,7 +210,7 @@
     i {
       margin-right: 10px;
       font-size: 20px;
-      color: $darkgreen;
+      color: black;
     }
   }
   .label7 {
@@ -220,7 +219,7 @@
     i {
       margin-right: 10px;
       font-size: 20px;
-      color: $darkgreen;
+      color: black;
     }
   }
   .label8 {
@@ -229,7 +228,7 @@
     i {
       margin-right: 10px;
       font-size: 20px;
-      color: $darkgreen;
+      color: black;
     }
   }
   .label9 {
@@ -238,7 +237,7 @@
     i {
       margin-right: 10px;
       font-size: 20px;
-      color: $darkgreen;
+      color: black;
     }
   }
 
@@ -254,7 +253,7 @@
       position: relative;
       border: none;
       background-color: transparent;
-      color: $ligthgreen;
+      color: $textcolor;
       font-size: 20px;
       display: flex;
       align-items: center;
@@ -266,13 +265,13 @@
         display: block;
         width: 600px;
         height: 0.5px;
-        background-color: $ligthgreen;
+        background-color: rgb(34, 243, 34);
         margin: 0 20px;
       }
 
       &:hover::before,
       &:hover::after {
-        background-color: $green;
+        background-color: rgb(34, 243, 34);
       }
     }
   }

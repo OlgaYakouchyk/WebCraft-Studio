@@ -1,35 +1,3 @@
-//КАрусель PROCESS
-
-
-const swiper = new Swiper('.swiper', {
-  slidesPerView: 4, // Количество видимых слайдов
-  slidesPerGroup: 1, // Прокрутка по 1
-  spaceBetween: 20, // Расстояние между слайдами
-  loop: true, // Зацикливание
-  loopFillGroupWithBlank: true, // Заполняет пустые места
-  navigation: {
-    nextEl: '.swiper-button-next', // Кнопка "вперед"
-    prevEl: '.swiper-button-prev', // Кнопка "назад"
-  },
-  breakpoints: {
-    768: {
-      slidesPerView: 1, // На мобильных показывать 1 элемент
-    },
-    1024: {
-      slidesPerView: 2, // На планшетах показывать 2 элемента
-    },
-    1440: {
-      slidesPerView: 4, // На десктопах показывать 4 элемента
-    },
-  },
-  pagination: {
-    el: '.swiper-pagination', // Пагинация
-    clickable: true, // Возможность клика по пагинации
-  },
-});
-
-console.log(swiper.slides);
-
 
 
 // let carousel = document.querySelector(".block-carusel");
