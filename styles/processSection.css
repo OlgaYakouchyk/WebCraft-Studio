@@ -304,51 +304,39 @@
     opacity: 1;
   }
 }
-.block-top .arrows {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: 100px;
-  gap: 50px;
-}
-.block-top .arrows .prev,
-.block-top .arrows .next {
-  width: 70px;
-  height: 70px;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-}
-.block-top .arrows .prev i,
-.block-top .arrows .next i {
-  color: white;
-  font-size: 50px;
-}
-.block-top .arrows .prev:hover i,
-.block-top .arrows .next:hover i {
-  color: rgb(2, 234, 29); /* Изменение цвета при наведении */
-}
 
 .scroll-conteiner {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; /* Горизонтальное расположение карточек */
-  gap: 20px; /* Расстояние между карточками */
+  display: flex;
+  gap: 20px;
   overflow-x: auto; /* Включить горизонтальный скролл */
-  padding: 20px; /* Отступы внутри контейнера */
+  padding: 20px;
   -ms-scroll-snap-type: x mandatory;
       scroll-snap-type: x mandatory; /* Фиксация скролла на карточках */
+  width: 100%; /* Контейнер растягивается на 100% */
+}
+.scroll-conteiner::-webkit-scrollbar {
+  height: 8px;
+  background-color: #222; /* Фон скроллбара */
+  border-radius: 10px;
+}
+.scroll-conteiner::-webkit-scrollbar-thumb {
+  background-color: #ffffff; /* Цвет бегунка */
+  border-radius: 10px;
+  border: 2px solid #222; /* Пространство вокруг бегунка */
+}
+.scroll-conteiner::-webkit-scrollbar-thumb:hover {
+  background-color: #00ff1e; /* Цвет бегунка при наведении */
+}
+.scroll-conteiner::-webkit-scrollbar-track {
+  background-color: #111; /* Цвет трека (фона) */
+  border-radius: 10px;
 }
 .scroll-conteiner .card {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 300px;
-          flex: 0 0 300px; /* Фиксированная ширина карточки */
+      -ms-flex: 0 0 336px;
+          flex: 0 0 336px; /* Фиксированная ширина карточки */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -361,7 +349,6 @@
           align-items: center;
   background-color: #101616;
   border-radius: 20px;
-  width: 336px;
   margin: 0 10px;
   text-align: center;
   -webkit-box-sizing: border-box;
@@ -393,6 +380,9 @@
   font-weight: 600;
   padding: 8px;
   margin-top: 8px;
+}
+.btn-discuss:hover {
+  color: #00ff1e;
 }
 
 @media (max-width: 1280px) {

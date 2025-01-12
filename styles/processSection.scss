@@ -79,50 +79,45 @@
     }
   }
 
-  .arrows {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 100px;
-    gap: 50px;
 
-    .prev,
-    .next {
-      width: 70px;
-      height: 70px;
-      border: none;
-      background-color: transparent;
-      cursor: pointer;
-    }
-
-    .prev i,
-    .next i {
-      color: $textcolor;
-      font-size: 50px;
-    }
-
-    .prev:hover i,
-    .next:hover i {
-      color: $green; /* Изменение цвета при наведении */
-    }
-  }
 }
 
 .scroll-conteiner{
-  display: flex; /* Горизонтальное расположение карточек */
-  gap: 20px; /* Расстояние между карточками */
+  display: flex; 
+  gap: 20px; 
   overflow-x: auto; /* Включить горизонтальный скролл */
-  padding: 20px; /* Отступы внутри контейнера */
+  padding: 20px; 
   scroll-snap-type: x mandatory; /* Фиксация скролла на карточках */
+  width: 100%; /* Контейнер растягивается на 100% */
+
+  &::-webkit-scrollbar {
+    height: 8px; 
+    background-color: #222; /* Фон скроллбара */
+    border-radius: 10px; 
+}
+
+&::-webkit-scrollbar-thumb {
+    background-color: #ffffff; /* Цвет бегунка */
+    border-radius: 10px; 
+    border: 2px solid #222; /* Пространство вокруг бегунка */
+}
+
+&::-webkit-scrollbar-thumb:hover {
+    background-color: #00ff1e; /* Цвет бегунка при наведении */
+}
+
+&::-webkit-scrollbar-track {
+    background-color: #111; /* Цвет трека (фона) */
+    border-radius: 10px;
+}
 
   .card {
-    flex: 0 0 300px; /* Фиксированная ширина карточки */
+    flex: 0 0 336px; /* Фиксированная ширина карточки */
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #101616;
     border-radius: 20px;
-    width: 336px;
     margin: 0 10px;
     text-align: center;
     box-sizing: border-box;
@@ -155,6 +150,10 @@
   font-weight: 600;
   padding: 8px;
   margin-top: 8px;
+  
+  &:hover{
+    color: #00ff1e;
+  }
 }
 
 @media (max-width: 1280px) {

@@ -160,13 +160,16 @@
 .section-services .touch-with-me {
   margin-top: 15%;
   width: 500px;
-  height: 80px;
+  height: 65px;
   border: none;
-  border-radius: 28px;
-  background-color: white;
-  color: #101616;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
   font-size: 40px;
   font-weight: 600;
   margin-left: 4%;
   margin-bottom: 12%;
+}
+.section-services .touch-with-me:hover {
+  color: rgb(2, 234, 29);
 }

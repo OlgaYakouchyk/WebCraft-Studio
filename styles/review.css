@@ -206,7 +206,7 @@
   opacity: 1;
   -webkit-animation: fadeIn 2s ease-in-out;
           animation: fadeIn 2s ease-in-out;
-  color: hsl(115, 100%, 15%);
+  color: black;
 }
 @-webkit-keyframes fadeIn {
   from {
@@ -224,36 +224,7 @@
     opacity: 1;
   }
 }
-.reviews .arrows {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: 100px;
-  margin-bottom: 30px;
-  gap: 50px;
-}
-.reviews .arrows .prev2,
-.reviews .arrows .next2 {
-  width: 70px;
-  height: 70px;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-}
-.reviews .arrows .prev2 i,
-.reviews .arrows .next2 i {
-  color: hsl(115, 100%, 15%);
-  font-size: 50px;
-}
-.reviews .arrows .prev2:hover i,
-.reviews .arrows .next2:hover i {
-  color: rgba(191, 246, 202, 0.5490196078); /* Изменение цвета при наведении */
-}
-.reviews .block-carusel2 {
-  position: relative;
+.reviews .scroll-conteiner-2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -263,12 +234,33 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  overflow: hidden;
-  -webkit-transition: margin-left 0.5s;
-  transition: margin-left 0.5s;
-  padding-right: 2%;
+  overflow-x: auto; /* Включить горизонтальный скролл */
+  padding: 10px;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory; /* Фиксация скролла на карточках */
+  width: 100%; /* Контейнер растягивается на 100% */
 }
-.reviews .block-carusel2 .block-review {
+.reviews .scroll-conteiner-2::-webkit-scrollbar {
+  height: 8px;
+  background-color: #222; /* Фон скроллбара */
+  border-radius: 10px;
+}
+.reviews .scroll-conteiner-2::-webkit-scrollbar-thumb {
+  background-color: #ffffff; /* Цвет бегунка */
+  border-radius: 10px;
+  border: 2px solid #222; /* Пространство вокруг бегунка */
+}
+.reviews .scroll-conteiner-2::-webkit-scrollbar-thumb:hover {
+  background-color: #00ff1e; /* Цвет бегунка при наведении */
+}
+.reviews .scroll-conteiner-2::-webkit-scrollbar-track {
+  background-color: #111; /* Цвет трека (фона) */
+  border-radius: 10px;
+}
+.reviews .scroll-conteiner-2 .block-review {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 500px;
+          flex: 0 0 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -281,7 +273,6 @@
           align-items: center;
   background-color: #101616;
   border-radius: 20px;
-  width: 500px;
   height: 250px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -292,8 +283,9 @@
   padding: 0 20px;
   margin-bottom: 5px;
   color: white;
+  scroll-snap-align: center; /* Фиксация карточки в центре экрана при скролле */
 }
-.reviews .block-carusel2 .block-review .wrapper {
+.reviews .scroll-conteiner-2 .block-review .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -302,7 +294,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.reviews .block-carusel2 .block-review .wrapper .top {
+.reviews .scroll-conteiner-2 .block-review .wrapper .top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -313,7 +305,7 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.reviews .block-carusel2 .block-review .wrapper .top .top-left {
+.reviews .scroll-conteiner-2 .block-review .wrapper .top .top-left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -329,15 +321,15 @@
   margin: 20px;
   text-align: start;
 }
-.reviews .block-carusel2 .block-review .wrapper .top .top-left p:first-child {
+.reviews .scroll-conteiner-2 .block-review .wrapper .top .top-left p:first-child {
   color: rgba(191, 246, 202, 0.5490196078);
 }
-.reviews .block-carusel2 .block-review .wrapper .top-rigth {
+.reviews .scroll-conteiner-2 .block-review .wrapper .top-rigth {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.reviews .block-carusel2 .block-review .wrapper .bottom {
+.reviews .scroll-conteiner-2 .block-review .wrapper .bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -350,13 +342,13 @@
           align-items: flex-start;
   margin-left: 20px;
 }
-.reviews .block-carusel2 .block-review .wrapper .bottom p {
+.reviews .scroll-conteiner-2 .block-review .wrapper .bottom p {
   font-size: 19px;
   color: white;
   text-align: start;
   margin-bottom: 20px;
 }
-.reviews .block-carusel2 .block-review .wrapper .btn-read-more {
+.reviews .scroll-conteiner-2 .block-review .wrapper .btn-read-more {
   border: none;
   text-decoration: underline;
   color: white;

@@ -25,53 +25,74 @@
 
     &.fade-in {
       opacity: 1;
-      @include fade-in-text(2s, $darkgreen);
+      @include fade-in-text(2s, black);
     }
   }
 
-  .arrows {
-    display: flex;
-    align-items: center;
-    margin-left: 100px;
-    margin-bottom: 30px;
-    gap: 50px;
+  // .arrows {
+  //   display: flex;
+  //   align-items: center;
+  //   margin-left: 100px;
+  //   margin-bottom: 30px;
+  //   gap: 50px;
 
-    .prev2,
-    .next2 {
-      width: 70px;
-      height: 70px;
-      border: none;
-      background-color: transparent;
-      cursor: pointer;
-    }
-    .prev2 i,
-    .next2 i {
-      color: $darkgreen;
-      font-size: 50px;
-    }
+  //   .prev2,
+  //   .next2 {
+  //     width: 70px;
+  //     height: 70px;
+  //     border: none;
+  //     background-color: transparent;
+  //     cursor: pointer;
+  //   }
+  //   .prev2 i,
+  //   .next2 i {
+  //     color: black;
+  //     font-size: 50px;
+  //   }
 
-    .prev2:hover i,
-    .next2:hover i {
-      color: $ligthgreen; /* Изменение цвета при наведении */
-    }
-  }
+  //   .prev2:hover i,
+  //   .next2:hover i {
+  //     color: rgb(6, 250, 6); /* Изменение цвета при наведении */
+  //   }
+  // }
 
-  .block-carusel2 {
-    position: relative;
+  .scroll-conteiner-2 {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    overflow: hidden;
-    transition: margin-left 0.5s;
-    padding-right: 2%;
+    align-items: center; 
+    overflow-x: auto; /* Включить горизонтальный скролл */
+    padding: 10px; 
+    scroll-snap-type: x mandatory; /* Фиксация скролла на карточках */
+    width: 100%; /* Контейнер растягивается на 100% */
+
+    &::-webkit-scrollbar {
+      height: 8px; 
+      background-color: #222; /* Фон скроллбара */
+      border-radius: 10px; 
+  }
+  
+  &::-webkit-scrollbar-thumb {
+      background-color: #ffffff; /* Цвет бегунка */
+      border-radius: 10px; 
+      border: 2px solid #222; /* Пространство вокруг бегунка */
+  }
+  
+  &::-webkit-scrollbar-thumb:hover {
+      background-color: #00ff1e; /* Цвет бегунка при наведении */
+  }
+  
+  &::-webkit-scrollbar-track {
+      background-color: #111; /* Цвет трека (фона) */
+      border-radius: 10px;
+  }
 
     .block-review {
+      flex: 0 0 500px;
       display: flex;
       flex-direction: column;
       align-items: center;
       background-color: #101616;
       border-radius: 20px;
-      width: 500px;
       height: 250px;
       flex-shrink: 0;
       margin: 0 10px;
@@ -80,6 +101,7 @@
       padding: 0 20px;
       margin-bottom: 5px;
       color: $textcolor;
+      scroll-snap-align: center; /* Фиксация карточки в центре экрана при скролле */
 
       .wrapper {
         display: flex;
