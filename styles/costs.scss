@@ -108,6 +108,10 @@
             background-color: transparent;
             color: $textcolor;
             font-size: 25px;
+
+            &:hover{
+              color: $green;
+            }
           }
 
             .btn-include {

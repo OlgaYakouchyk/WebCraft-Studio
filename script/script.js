@@ -57,44 +57,44 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // КАРУСЕЛЬ REVIEWS
 
-let carousel2 = document.querySelector(".block-carusel2");
+// let carousel2 = document.querySelector(".block-carusel2");
 
-let b = 1;
-for (let block2 of carousel2.querySelectorAll(".block-review")) {
-  block2.style.position = "relative";
-  b++;
-}
+// let b = 1;
+// for (let block2 of carousel2.querySelectorAll(".block-review")) {
+//   block2.style.position = "relative";
+//   b++;
+// }
 
-/* конфигурация */
-let width2 = 530; // ширина картинки
-let count2 = 3; // видимое количество изображений
+// /* конфигурация */
+// let width2 = 530; // ширина картинки
+// let count2 = 3; // видимое количество изображений
 
-let list2 = carousel2;
-let listElems2 = carousel2.querySelectorAll(".block-review");
+// let list2 = carousel2;
+// let listElems2 = carousel2.querySelectorAll(".block-review");
 
-let position2 = 0; // положение ленты прокрутки
+// let position2 = 0; // положение ленты прокрутки
 
-const prevButton2 = document.querySelector(".prev2");
-const nextButton2 = document.querySelector(".next2");
+// const prevButton2 = document.querySelector(".prev2");
+// const nextButton2 = document.querySelector(".next2");
 
-if (prevButton2 && nextButton2) {
-  prevButton2.onclick = function () {
-    // сдвиг влево
-    position2 += width2 * count2;
-    // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
-    position2 = Math.min(position2, 0);
-    list2.style.marginLeft = position2 + "px";
-  };
+// if (prevButton2 && nextButton2) {
+//   prevButton2.onclick = function () {
+//     // сдвиг влево
+//     position2 += width2 * count2;
+//     // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
+//     position2 = Math.min(position2, 0);
+//     list2.style.marginLeft = position2 + "px";
+//   };
 
-  nextButton2.onclick = function () {
-    // сдвиг вправо
-    position2 -= width2 * count2;
-    // последнее передвижение вправо может быть не на 3, а на 2 или 1 элемент
-    if (position2 < -(width2 * (listElems2.length - count2))) {
-      position2 = -(width2 * (listElems2.length - count2));
-    }
-    list2.style.marginLeft = position2 + "px";
-  };
-} else {
-  console.error("Button navigetion do not exist");
-}
+//   nextButton2.onclick = function () {
+//     // сдвиг вправо
+//     position2 -= width2 * count2;
+//     // последнее передвижение вправо может быть не на 3, а на 2 или 1 элемент
+//     if (position2 < -(width2 * (listElems2.length - count2))) {
+//       position2 = -(width2 * (listElems2.length - count2));
+//     }
+//     list2.style.marginLeft = position2 + "px";
+//   };
+// } else {
+//   console.error("Button navigetion do not exist");
+// }

@@ -58,8 +58,11 @@
       .btn-discuss {
         color: $textcolor;
         font-size: 25px;
+        border-radius: 20px;
+        width: 250px;
+        font-weight: 600;
+        height: 50px;
         align-items: center;
-        background-color: transparent;
 
         &:hover,
         &:focus {

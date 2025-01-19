@@ -155,6 +155,11 @@
   color: white;
   font-size: 25px;
 }
+.section-costs .costs-top .cost-section-rigth .cost-section2 .blok3 .btn-discuss:hover,
+.section-costs .costs-top .cost-section-rigth .cost-section3 .blok3 .btn-discuss:hover,
+.section-costs .costs-top .cost-section-rigth .cost-section4 .blok3 .btn-discuss:hover {
+  color: rgb(2, 234, 29);
+}
 .section-costs .costs-top .cost-section-rigth .cost-section2 .blok3 .btn-include,
 .section-costs .costs-top .cost-section-rigth .cost-section3 .blok3 .btn-include,
 .section-costs .costs-top .cost-section-rigth .cost-section4 .blok3 .btn-include {

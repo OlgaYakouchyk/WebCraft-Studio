@@ -63,10 +63,13 @@
 .main-header .header-conteiner a .btn-discuss {
   color: white;
   font-size: 25px;
+  border-radius: 20px;
+  width: 250px;
+  font-weight: 600;
+  height: 50px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: transparent;
 }
 .main-header .header-conteiner a .btn-discuss:hover, .main-header .header-conteiner a .btn-discuss:focus {
   color: rgb(2, 234, 29);
